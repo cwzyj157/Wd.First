@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataConfiger>
+  <!--子区域:隐藏表单_文献-->
+  <zone id="hidden">
+    <![CDATA[
+			<INPUT id=txt_i type=hidden value=1 name=txt_i />
+			<INPUT id=txt_c type=hidden value=5 name=txt_c /> 
+			<input id="au_i" type="hidden" value="1" name="au_i" /> 
+			<input id="au_c" type="hidden" value="4" name="au_c" />
+			<input type="hidden" value="" name="srccode" id="srccode" />
+			<input type="hidden" value="" name="srcfield" id="srcfield" />
+			<input type="hidden" value="" name="cjfdcode" id="cjfdcode" />
+			<input type="hidden" value="" name="expertvalue" id="expertvalue" />
+			<input type="hidden" value="" name="navilist" id="navilist" />
+			<input type="hidden" value="(发表时间,'Time') desc" name="orderby" id="orderby" />
+			<input type="hidden" value="" name="updatedate" id="updatedate" />
+			<input type="hidden" name="SearchFieldRelationDirectory" value="题名/[],作者/[作者],单位/[],关键词/[],主题/[],全文/[],来源/[],摘要/[]" ID="SearchFieldRelationDirectory">
+		]]>
+  </zone>
+  <!--子区域:分组提示-->
+  <zone id="group">
+    <![CDATA[
+			<div id="divgrouptxt" name="divgrouptxt" style="display:none">	
+				<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td height="5"></td>
+					</tr>
+					<tr>
+						<td height="1" bgcolor="#d6d6d6"></td>
+					</tr>
+					<tr>
+						<td height="5"></td>
+					</tr>
+				</table>
+				<div class="rightseachtitle"><div style="float:left;" ><strong>3. 检索结果分组筛选：</strong><span style="color: #666;" >(仅对前4万篇文献分组，取前60个分组词)</span></div>
+          <div class="class_grid_jcbg01"  >
+           <div style="color:#000; float:left;height:16px;padding:6px 0 0 6px;">检索结果不错，</div>
+           
+                <div class="xswx_anniu" style="float:left" id="divresult">
+                  <a href="javascript:SubmitUser();" class="a03">定制或收藏本次检索式</a>
+                </div>
+             
+          </div>
+        </div>
+			</div>
+		]]>
+  </zone>
+
+  <!--子区域:学术内容检索词-->
+  <zone id="txt">
+    <![CDATA[
+			<div class="rightseachlist" id="divtxt">
+				<TABLE id="tbltxt">
+				<TBODY>
+				<TR id=txt_1>
+					<TD height=25 align="left" noWrap>
+          <input type="button" class="add01" onclick="AddRow('txt','txt_i','txt_c');this.blur();"/>&nbsp;
+          <input type="button" class="pluss02" onclick="DeleteRow('txt','txt_i','txt_c');this.blur();"/> 
+          </TD>
+					<TD align=left width="95%" height=25><span style="font-size:16px; font-weight:bold;">(</span>
+					<SELECT class=font9 id=txt_1_sel name=txt_1_sel> 						
+						<OPTION value=题名 selected>题名</OPTION> 
+            <OPTION value=作者>作者</OPTION>
+            <OPTION value=单位>单位</OPTION>
+            <OPTION value=来源>来源</OPTION>
+            <OPTION value=关键词>关键词</OPTION> 
+            <OPTION value=摘要>摘要</OPTION>						
+            <OPTION value=主题>主题</OPTION>            
+            <OPTION value=中图分类号>中图分类号</OPTION>
+            <OPTION value=全文>全文</OPTION> 
+					</SELECT> 
+					<INPUT class="font9 gray" id=txt_1_value1 style="BORDER: #fe0000 1px solid;WIDTH: 150px" onfocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000';document.getElementById('currentid').value=this.id;" maxLength=120 size=10 value="" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" name=txt_1_value1> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_1_value1','$txt_1_sel');" />
+					<SELECT class=font9 id=txt_1_relation name=txt_1_relation> 
+						<OPTION value=#CNKI_AND selected>并含</OPTION> 
+						<OPTION value=#CNKI_OR>或含</OPTION> 
+						<OPTION value=#CNKI_NOT>不含</OPTION>
+					</SELECT> 
+						<INPUT class="font9 gray" id=txt_1_value2 style="BORDER: #fe0000 1px solid;WIDTH: 150px" onfocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000';document.getElementById('currentid').value=this.id;" maxLength=120 size=10 value="" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" name=txt_1_value2> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_1_value2','$txt_1_sel');" />
+					<SELECT class=font9 id=txt_1_special1 onChange="" name=txt_1_special1> 
+						<OPTION value="%" >模糊</OPTION> 
+						<OPTION value="=" selected>精确</OPTION>
+					</SELECT><span style="font-size:16px; font-weight:bold;">)</span>
+					</TD>
+					</TR>
+					<TR id=txt_2 style="display:none">
+					<TD align="left" valign="top" noWrap>
+							<SELECT class=font9 id=txt_2_logical name=txt_2_logical > 
+							<OPTION class=font9 value=and selected>并含</OPTION> 
+							<OPTION value=or>或含</OPTION> 
+							<OPTION value=not>不含</OPTION>
+					</SELECT>					</TD>
+					<TD align=left width="95%" height=25><span style="font-size:16px; font-weight:bold;">(</span>
+					<SELECT class=font9 id=txt_2_sel name=txt_2_sel> 
+						<OPTION value=题名>题名</OPTION> 
+            <OPTION value=作者 selected>作者</OPTION>
+            <OPTION value=单位>单位</OPTION>
+            <OPTION value=来源>来源</OPTION>
+            <OPTION value=关键词>关键词</OPTION> 
+            <OPTION value=摘要>摘要</OPTION>						
+            <OPTION value=主题>主题</OPTION>            
+            <OPTION value=中图分类号>中图分类号</OPTION>
+            <OPTION value=全文>全文</OPTION> 
+					</SELECT> 
+					<INPUT class=font9 id=txt_2_value1 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_2_value1> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_2_value1','$txt_2_sel');" />
+						<SELECT class=font9 id=txt_2_relation name=txt_2_relation> 
+							<OPTION value=#CNKI_AND selected>并含</OPTION> 
+							<OPTION value=#CNKI_OR>或含</OPTION> 
+							<OPTION value=#CNKI_NOT>不含</OPTION>
+						</SELECT> 
+						<INPUT class="font9 " id=txt_2_value2 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_2_value2> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_2_value2','$txt_2_sel');" />
+					<SELECT class=font9 id=txt_2_special1 onChange="" name=txt_2_special1> 
+					<OPTION value="%" >模糊</OPTION> 
+					<OPTION value="=" selected>精确</OPTION></SELECT><span style="font-size:16px; font-weight:bold;">)</span></TD>
+					</TR>
+						<TR id=txt_3 style="display:none">
+					<TD align="left" valign="top" noWrap>
+							<SELECT class=font9 id=txt_3_logical name=txt_3_logical > 
+							<OPTION class=font9 value=and selected>并含</OPTION> 
+							<OPTION value=or>或含</OPTION> 
+							<OPTION value=not>不含</OPTION>
+					</SELECT>					</TD>
+					<TD align=left width="90%" height=25><span style="font-size:16px; font-weight:bold;">(</span>
+					<SELECT class=font9 id=txt_3_sel name=txt_3_sel> 
+					<OPTION value=题名>题名</OPTION> 
+            <OPTION value=作者>作者</OPTION>
+            <OPTION value=单位 selected>单位</OPTION>
+            <OPTION value=来源>来源</OPTION>
+            <OPTION value=关键词>关键词</OPTION> 
+            <OPTION value=摘要>摘要</OPTION>						
+            <OPTION value=主题>主题</OPTION>            
+            <OPTION value=中图分类号>中图分类号</OPTION>
+            <OPTION value=全文>全文</OPTION> 
+					</SELECT> 
+					<INPUT class=font9 id=txt_3_value1 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_3_value1> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_3_value1','$txt_3_sel');" />
+						<SELECT class=font9 id=txt_3_relation name=txt_3_relation> 
+							<OPTION value=#CNKI_AND selected>并含</OPTION> 
+							<OPTION value=#CNKI_OR>或含</OPTION> 
+							<OPTION value=#CNKI_NOT>不含</OPTION>
+						</SELECT> 
+						<INPUT class="font9 " id=txt_3_value2 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_3_value2> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_3_value2','$txt_2_sel');" />
+					<SELECT class=font9 id=txt_3_special1 onChange="" name=txt_3_special1> 
+					<OPTION value="%" selected>模糊</OPTION> 
+					<OPTION value="=">精确</OPTION></SELECT><span style="font-size:16px; font-weight:bold;">)</span></TD>
+					</TR>
+						<TR id=txt_4 style="display:none">
+					<TD align="left" valign="top" noWrap>
+							<SELECT class=font9 id=txt_4_logical name=txt_4_logical > 
+							<OPTION class=font9 value=and selected>并含</OPTION> 
+							<OPTION value=or>或含</OPTION> 
+							<OPTION value=not>不含</OPTION>
+					</SELECT>					</TD>
+					<TD align=left width="90%" height=25><span style="font-size:16px; font-weight:bold;">(</span>
+					<SELECT class=font9 id=txt_4_sel name=txt_4_sel> 
+						<OPTION value=题名>题名</OPTION> 
+            <OPTION value=作者>作者</OPTION>
+            <OPTION value=单位>单位</OPTION>
+            <OPTION value=来源 selected>来源</OPTION>
+            <OPTION value=关键词>关键词</OPTION> 
+            <OPTION value=摘要>摘要</OPTION>						
+            <OPTION value=主题>主题</OPTION>            
+            <OPTION value=中图分类号>中图分类号</OPTION>
+            <OPTION value=全文>全文</OPTION> 
+					</SELECT> 
+					<INPUT class=font9 id=txt_4_value1 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_4_value1> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_4_value1','$txt_4_sel');" />
+						<SELECT class=font9 id=txt_4_relation name=txt_4_relation> 
+							<OPTION value=#CNKI_AND selected>并含</OPTION> 
+							<OPTION value=#CNKI_OR>或含</OPTION> 
+							<OPTION value=#CNKI_NOT>不含</OPTION>
+						</SELECT> 
+						<INPUT class="font9 " id=txt_4_value2 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_4_value2> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_4_value2','$txt_4_sel');" />
+					<SELECT class=font9 id=txt_4_special1 onChange="" name=txt_4_special1> 
+					<OPTION value="%" selected>模糊</OPTION> 
+					<OPTION value="=">精确</OPTION></SELECT><span style="font-size:16px; font-weight:bold;">)</span></TD>
+					</TR>
+						<TR id=txt_5 style="display:none">
+					<TD align="left" valign="top" noWrap>
+							<SELECT class=font9 id=txt_5_logical name=txt_5_logical > 
+							<OPTION class=font9 value=and selected>并含</OPTION> 
+							<OPTION value=or>或含</OPTION> 
+							<OPTION value=not>不含</OPTION>
+					</SELECT>					</TD>
+					<TD align=left width="90%" height=25><span style="font-size:16px; font-weight:bold;">(</span>
+					<SELECT class=font9 id=txt_5_sel name=txt_5_sel> 
+					<OPTION value=题名>题名</OPTION> 
+            <OPTION value=作者>作者</OPTION>
+            <OPTION value=单位>单位</OPTION>
+            <OPTION value=来源>来源</OPTION>
+            <OPTION value=关键词 selected>关键词</OPTION> 
+            <OPTION value=摘要>摘要</OPTION>						
+            <OPTION value=主题>主题</OPTION>            
+            <OPTION value=中图分类号>中图分类号</OPTION>
+            <OPTION value=全文>全文</OPTION> 
+					</SELECT> 
+					<INPUT class=font9 id=txt_5_value1 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_5_value1> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_5_value1','$txt_5_sel');" />
+						<SELECT class=font9 id=txt_5_relation name=txt_5_relation> 
+							<OPTION value=#CNKI_AND selected>并含</OPTION> 
+							<OPTION value=#CNKI_OR>或含</OPTION> 
+							<OPTION value=#CNKI_NOT>不含</OPTION>
+						</SELECT> 
+						<INPUT class="font9 " id=txt_5_value2 style="WIDTH: 150px" onfocus="document.getElementById('currentid').value=this.id;" maxLength=120 size=10 name=txt_5_value2> 
+					<input type="button" class="relat" title="显示以输入词为中心词的相关词。" onclick="GetRelationWord('txt_5_value2','$txt_5_sel');" />
+					<SELECT class=font9 id=txt_5_special1 onChange="" name=txt_5_special1> 
+					<OPTION value="%" selected>模糊</OPTION> 
+					<OPTION value="=">精确</OPTION></SELECT><span style="font-size:16px; font-weight:bold;">)</span></TD>
+					</TR>
+					</TBODY>
+				</TABLE>	
+			</div>
+		]]>
+  </zone>
+  <!--子区域:文献提交-->
+  <zone id="sub">
+    <![CDATA[
+			<input id="au_i" type="hidden" value="1" name="au_i" /> 
+			<input id="au_c" type="hidden" value="4" name="au_c" />
+			<div class="anniu_wxx">
+					<span id="divresult" style="display:none"><input type="button" name="Submit3" value="在结果中检索"  class="butt06" onclick="javascript:SubmitForm('res','')">&nbsp;&nbsp;</span><input type="button" class="butt04" value="检索文献" ID="Button5" NAME="Button5" onclick="javascript:SubmitForm('','');">&nbsp;&nbsp;<input type="checkbox" onclick="DeleteFreq(this)" value="xls" id="txt_extension" checked name="txt_extension"/>中英文扩展检索
+			</div>
+		]]>
+  </zone>
+  <!--子区域:文献提交_在结果中检索-->
+  <zone id="sub_res">
+    <![CDATA[
+			<input id="au_i" type="hidden" value="1" name="au_i" /> 
+			<input id="au_c" type="hidden" value="3" name="au_c" />
+			<div style="text-align:right;padding-right:100px;padding-top:5px;">
+					<input type="button" name="Submit3" value="在结果中检索"  class="butt06" style="cursor:pointer" onclick="javascript:SubmitForm('res','')">&nbsp;&nbsp;<input type="button" name="Submit" value="检索文献"  class="butt04" style="cursor:pointer" onclick="javascript:SubmitForm('','')">&nbsp;&nbsp;<input type="checkbox" onclick="DeleteFreq(this)" value="xls"  id="txt_extension" name="txt_extension"/>中英文扩展检索
+			</div>
+		]]>
+  </zone> 
+  <!--子区域：博硕库-->
+  <zone id="db_boshuo">
+    <![CDATA[
+			<div class="rightseachlist" id="divdb" style="display:none">
+				<font color="black">选择子库：  </font>
+				<input type="text" name="db_value" style="WIDTH:300px;" ID="db_value" style="ime-mode:disabled;" onkeypress="return false;" value="CUADBS" class="input_border" />
+				<input type="button" class="liulan" onclick="MM_openBrWindow('/grid2008/popup/CheckList.aspx','cnki_dbinfo','视图名称','视图名称','数据库分类名称','$db_opt','Form1.db_value',',','popup','scrollbars=yes,width=400,height=350')" />
+			</div>
+		]]>
+  </zone>
+</DataConfiger>

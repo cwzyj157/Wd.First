@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<input id="db_name" type="hidden" value="CNKI_PROJECTS" name="db_name">
+  <table width="765" height="0" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#4b66bf">
+    <tr>
+      <td bgcolor="#f2f2f2">
+        <table width="700" border="0" cellspacing="0" cellpadding="2">
+          <tr>
+            <td width="5" rowspan="4" class="red_blod"></td>
+            <td colspan="2">
+              项目名称:　　<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 432px;" name="prjname" id="prjname" />
+            </td>
+          </tr>
+          <!--
+      <tr>
+        <td colspan="2">所属学科:
+		<input name="naviname" type="text" value="全部学科" disabled style="width:410px" ID="naviname">
+		<input type="hidden" name ="navicode" id="navicode"/>
+		<input type="hidden" name ="navifield" id="navifield" value="涉及学科代码" />
+		<img src="/grid2008/images/liulan.gif" width="23" height="20" align="absmiddle" style="cursor:hand" onClick="MM_openNavi2Win('/grid2008/popup/NaviList.aspx','中国学术文献网络出版总库','Form1.naviname')"></td>
+      </tr>
+      -->
+          <tr>
+            <td>
+              项目研究内容:<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 150px;" name="org1" id="org1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              项目来源:　　<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 150px;" name="org2" id="org2" />
+            </td>
+          </tr>
+          <!--<tr>
+            <td>
+              项目性质:
+              <input type="text" style="border: 1px solid rgb(127, 157, 185); width: 150px;" name="manager" id="manager" />
+            </td>
+          </tr>
+          -->
+          <tr>
+            <td >
+              发布单位:　　<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 150px;" name="org" id="org" />
+            </td>
+            <td>
+              <input type="button" class="butt04" value="检索" onclick="javascript:SubmitForm('','')" />　
+              <span  >
+                <a href="javascript:SubmitUser();">定制本次检索式</a>
+              </span>
+            </td>
+          </tr>
+
+
+
+        </table>
+
+      </td>
+
+    </tr>
+  </table>
+
+  <div id="divqry" class="i_collection" style="DISPLAY: none">
+    <div class="i_collectiontext">
+      <div class="i_collectionlist" id="divqrylogin" name="divqrylogin" style="padding-bottom:10px;">
+        请先登录或<a href="http://my.cnki.net/elibRegister/PersonlibInfo.aspx" target="_blank">创建个人数字图书馆</a><br />
+        用户名：<input type="text" name="username" onKeyDown="if(event.keyCode==13) {SubmitKey('login');}" ID="username" class="input input_border"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        密码：<input type="password" name="password" onKeyDown="if(event.keyCode==13) {SubmitKey('login');}" ID="password"  class="input input_border"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" name="btnlogin" id="btnlogin" value="登录" onclick="if(checklogin()) SubmitUser(1);" style="cursor:hand"/>
+      </div>
+      <div class="i_collectionlist" id="divqrylogin2" name="divqrylogin2" style="padding-bottom:10px;display:none;">
+        <span id="divqrytip" name="divqrytip">请输入管理员密码：</span><input type="password" name="superpwd" onKeyDown="if(event.keyCode==13) {SubmitKey('login');}" ID="superpwd" class="input input_border"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" name="btnlogin2" id="btnlogin2" value="登录" onclick="if(checklogin2()) SubmitSuperUser();" style="cursor:hand"/>
+      </div>
+      <div class="i_collectionlist" id="divqrysave" name="divqrysave" style="display:none">
+        为检索式起个名字：<font color="#666666">例如“中国电子商务发展现状”或“自然语言检索研究”</font><br />
+        <input name="qryname" type="text" id="qryname" size="50" maxlength="20"  class="input input_border" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')"/>&nbsp;&nbsp;
+        <input type="button" name="btncustom" id="btncustom" value="定制到馆" onclick="javascript:CustomQuery();" style="cursor:hand"/>
+      </div>
+    </div>
+    <div class="i_collectionclose" onclick="HideDiv('divqry')" style="cursor:hand">关闭</div>
+    <div style="clear:both;"></div>
+  </div>
+  <div style="display:none">
+
+
+    <span id="publishdate1" style="">
+      <font color="black">从</font>
+      <input class="font9 input_border gray" id="publishdate1_from" name="publishdate1_from" size="20" maxlength="20" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" value='' onClick="getDateString(this, oCalendarChs)" type="text" style="WIDTH:100px;">
+        <font color="black">到</font>
+        <input class="font9 input_border gray" id="publishdate1_to" name="publishdate1_to" size="20" maxlength="20" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" value='' onClick="getDateString(this, oCalendarChs)" type="text" style="WIDTH:100px;">
+				
+    </span>
+  </div>
+
+

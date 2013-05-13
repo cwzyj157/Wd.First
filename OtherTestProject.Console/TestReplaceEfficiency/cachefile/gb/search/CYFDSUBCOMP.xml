@@ -1,0 +1,130 @@
+﻿<div id="source">
+  <input id="db_name" type="hidden" value="NJZKJB" name="db_name"></input>
+  <input id="stat1_i" type="hidden" value="1" name="stat1_i"></input>
+  <input id="stat1_c" type="hidden" value="3" name="stat1_c"></input>
+  <input id="qk_i" type="hidden" value="1" name="qk_i"></input>
+  <input id="qk_c" type="hidden" value="4" name="qk_c"></input>
+  <input id="orderby" type="hidden" value="文献篇数" name="orderby"></input>
+</div>
+<div style="display:none">
+  <input type="hidden" id="ordersrc_1_sel" value="拼音刊名"></input>
+
+  <input type="hidden" id="ordersrc_1_special1" value="%"></input>
+</div>
+<div class="rightseachtitle">
+	<span >
+		<strong>第一步：请选择出版物</strong>
+		<span style="color:#666;">（最多可选15本）</span>
+	</span>
+	
+	
+</div>
+
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="dd01" id="qk_1">
+    <td nowrap="true" style="width:70px;">
+      <A href="javascript:AddRow('qk','qk_i','qk_c');">
+        <IMG src='/grid2008/images/01.gif' border='0'>
+      </A>&nbsp;<A href="javascript:DeleteRow('qk','qk_i','qk_c');">
+        <IMG src='/grid2008/images/02.gif' border='0'>
+      </A>
+    </td>
+    <td>
+      <select id='qk_1_sel' name='qk_1_sel'>
+        <option value='年鉴中文名'selected=''>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+        <option value='主编'>主编</option>
+        <option value='主编单位'>主编单位</option>
+        <option value='主题词'>主题词</option>
+      </select>
+      <input type='text' id="qk_1_value1" name="qk_1_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>
+      <select class="font9" id="qk_1_special1"  name="qk_1_special1" onchange="">
+        <option value='%' selected=''>模糊</option>
+        <option value='='>精确</option>
+      </select>
+      <input type="hidden" value="" id="qk_1_extension" name="qk_1_extension" />
+    </td>
+  </tr>
+
+  <tr class="dd01" style="display:none" id="qk_2">
+    <td nowrap="true" style="width:70px;"  align="left">
+      <select id="qk_2_logical"  name="qk_2_logical">
+        <option value="and" selected="">并含</option>
+        <option value="or">或含</option>
+        <option value="not">不含</option>
+      </select>
+    </td>
+    <td>
+      <select id="qk_2_sel" name="qk_2_sel">
+        <option value='年鉴中文名'>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+        <option value='主编' selected=''>主编</option>
+        <option value='主编单位'>主编单位</option>
+        <option value='主题词'>主题词</option>
+      </select>
+      <input type='text' id="qk_2_value1" name="qk_2_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;" />
+      <select class="font9" id="qk_2_special1"  name="qk_2_special1" onchange="">
+        <option value='%'>模糊</option>
+        <option value='=' selected=''>精确</option>
+      </select>
+      <input type="hidden" value="" id="qk_2_extension" name="qk_2_extension" />
+    </td>
+  </tr>
+
+  <tr class="dd01" style="display:none" id="qk_3">
+    <td nowrap="true" style="width:70px;"  align="left">
+      <select id="qk_3_logical"  name="qk_3_logical">
+        <option value="and" selected="">并含</option>
+        <option value="or">或含</option>
+        <option value="not">不含</option>
+      </select>
+    </td>
+    <td>
+      <select id="qk_3_sel" name="qk_3_sel">
+        <option value='年鉴中文名'>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+        <option value='主编'>主编</option>
+        <option value='主编单位' selected=''>主编单位</option>
+        <option value='主题词'>主题词</option>
+      </select>
+      <input type='text' id="qk_3_value1" name="qk_3_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>
+      <select class="font9" id="qk_3_special1"  name="qk_3_special1" onchange="">
+        <option value='%'>模糊</option>
+        <option value='=' selected=''>精确</option>
+      </select>
+      <input type="hidden" value="" id="qk_3_extension" name="qk_3_extension" />
+    </td>
+    </dd>
+
+    <tr class="dd01" style="display:none" id="qk_4">
+      <td nowrap="true" style="width:70px;"  align="left">
+        <select id="qk_4_logical"  name="qk_4_logical">
+          <option value="and" selected="">并含</option>
+          <option value="or">或含</option>
+          <option value="not">不含</option>
+        </select>
+      </td>
+      <td>
+        <select id="qk_4_sel" name="qk_4_sel">
+          <option value='年鉴中文名'>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+          <option value='主编'>主编</option>
+          <option value='主编单位'>主编单位</option>
+          <option value='主题词' selected=''>主题词</option>
+        </select>
+        <input type='text' id="qk_4_value1" name="qk_4_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>
+        <select class="font9" id="qk_4_special1"  name="qk_4_special1" onchange="">
+          <option value='%'>模糊</option>
+          <option value='=' selected=''>精确</option>
+        </select>
+        <input type="hidden" value="" id="qk_4_extension" name="qk_4_extension" />
+      </td>
+    </tr>
+  </table>
+<div class="anniu_wxx">
+  <!--<span id="divresult" style="display:none"><A class="b18" href="javascript:SubmitUser();">定制到自定义栏目</A>&nbsp;&nbsp;</span>-->
+  <input type="button" class="butt04" value="检索年鉴" onclick="javascript:SubmitForm('','')">
+</div>
+<div class="rightseachtitle">
+  <span >
+    <strong>第二步：</strong>
+  </span>
+  <input type="button" class="butt12" style="cursor:pointer" value="在所选出版物中检索文献" onclick="javascript:RedirectUrl()" />
+</div>
+

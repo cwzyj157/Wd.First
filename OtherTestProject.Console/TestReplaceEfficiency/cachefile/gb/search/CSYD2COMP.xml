@@ -1,0 +1,194 @@
+﻿<div class="rightseachlist">
+  <div id="source">
+    <input id="db_name" type="hidden" value="TJNJZK" name="db_name"></input>
+    <input id="stat1_i" type="hidden" value="1" name="stat1_i"></input>
+    <input id="stat1_c" type="hidden" value="3" name="stat1_c"></input>
+    <input id="qk_i" type="hidden" value="1" name="qk_i"></input>
+    <input id="qk_c" type="hidden" value="4" name="qk_c"></input>
+    <input id="orderby" type="hidden" value="(文献篇数,'integer')" name="orderby"></input>
+  </div>
+
+  <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr class="dd01" id="stat1_1">
+      <td nowrap="true" style="width:70px;">
+        <input type="button" class="add01" onclick="AddRow('stat1','stat1_i','stat1_c');this.blur();"/>&nbsp;
+        <input type="button" class="pluss02" onclick="DeleteRow('stat1','stat1_i','stat1_c');this.blur();"/>
+      </td>
+      <td>
+        <select id="stat1_1_sel" name="stat1_1_sel" style="" class="">
+          <option value='文献篇数' selected=''>文献篇数</option>
+        </select>
+        <select id="stat1_1_special3"  name="stat1_1_special3">
+          <option value='='>等于</option>
+          <option value='>'>大于</option>
+          <option value=''
+            <'>小于
+          </option>
+          <option value='>=' selected=''>大于等于</option>
+          <option value=''
+            <='>小于等于
+          </option>
+        </select>
+        <input id="stat1_1_value1" name="stat1_1_value1" size="10" maxlength="9" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;"/>
+      </td>
+    </tr>
+
+    <tr class="dd01" style="display:none" id="stat1_2">
+      <td nowrap="true" style="width:70px;"  align="left">
+        <select id="stat1_2_logical"  name="stat1_2_logical">
+          <option value="and" selected="">并含</option>
+          <option value="or">或含</option>
+          <option value="not">不含</option>
+        </select>
+      </td>
+      <td>
+        <select id="stat1_2_sel" name="stat1_2_sel" style="" class="">
+          <option value='文献篇数' selected=''>文献篇数</option>
+        </select>
+
+        <select id="stat1_2_special3"  name="stat1_2_special3">
+          <option value='='>等于</option>
+          <option value='>'>大于</option>
+          <option value=''
+            <'>小于
+          </option>
+          <option value='>=' selected=''>大于等于</option>
+          <option value=''
+            <='>小于等于
+          </option>
+        </select>
+
+        <input type='text' id="stat1_2_value1" name="stat1_2_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" size="6" style="border: 1px solid rgb(127, 157, 185); width: 90px;" />
+      </td>
+    </tr>
+
+    <tr class="dd01" style="display:none" id="stat1_3">
+      <td nowrap="true" style="width:70px;">
+        <select id="stat1_3_logical"  name="stat1_3_logical">
+          <option value="and" selected="">并含</option>
+          <option value="or">或含</option>
+          <option value="not">不含</option>
+        </select>
+      </td>
+      <td>
+        <select id="stat1_3_sel" name="stat1_3_sel" style="" class="">
+          <option value='文献篇数' selected=''>文献篇数</option>
+        </select>
+
+        <select id="stat1_3_special3"  name="stat1_3_special3">
+          <option value='='>等于</option>
+          <option value='>'>大于</option>
+          <option value=''
+            <'>小于
+          </option>
+          <option value='>=' selected=''>大于等于</option>
+          <option value=''
+            <='>小于等于
+          </option>
+        </select>
+
+        <input type='text' id="stat1_3_value1" name="stat1_3_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" size="6" style="border: 1px solid rgb(127, 157, 185); width: 90px;"/>
+      </td>
+    </tr>
+  </table>
+
+  <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr class="dd01" id="qk_1">
+      <td nowrap="true" style="width:70px;">
+        <input type="button" class="add01" onclick="AddRow('qk','qk_i','qk_c');this.blur();"/>&nbsp;
+        <input type="button" class="pluss02" onclick="DeleteRow('qk','qk_i','qk_c');this.blur();"/>
+      </td>
+      <td>
+        <select id="qk_1_sel" name="qk_1_sel">
+          <option value='年鉴中文名'selected=''>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+          <option value='主编'>主编</option>
+          <option value='主编单位'>主编单位</option>
+          <option value='主题词'>主题词</option>
+        </select>
+        <input type='text' id="qk_1_value1" name="qk_1_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>
+        <select class="font9" id="qk_1_special1"  name="qk_1_special1" onchange="">
+          <option value='%' selected=''>模糊</option>
+          <option value='='>精确</option>
+        </select>
+        <input type="hidden" value="" id="qk_1_extension" name="qk_1_extension" />
+      </td>
+    </tr>
+
+    <tr class="dd01" style="display:none" id="qk_2">
+      <td nowrap="true" style="width:70px;"  align="left">
+        <select id="qk_2_logical"  name="qk_2_logical">
+          <option value="and" selected="">并含</option>
+          <option value="or">或含</option>
+          <option value="not">不含</option>
+        </select>
+      </td>
+      <td>
+        <select id="qk_2_sel" name="qk_2_sel">
+          <option value='年鉴中文名'>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+          <option value='主编' selected=''>主编</option>
+          <option value='主编单位'>主编单位</option>
+          <option value='主题词'>主题词</option>
+        </select>
+        <input type='text' id="qk_2_value1" name="qk_2_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;" />
+        <select class="font9" id="qk_2_special1"  name="qk_2_special1" onchange="">
+          <option value='%'>模糊</option>
+          <option value='=' selected=''>精确</option>
+        </select>
+        <input type="hidden" value="" id="qk_2_extension" name="qk_2_extension" />
+      </td>
+    </tr>
+
+    <tr class="dd01" style="display:none" id="qk_3">
+      <td nowrap="true" style="width:70px;"  align="left">
+        <select id="qk_3_logical"  name="qk_3_logical">
+          <option value="and" selected="">并含</option>
+          <option value="or">或含</option>
+          <option value="not">不含</option>
+        </select>
+      </td>
+      <td>
+        <select id="qk_3_sel" name="qk_3_sel">
+          <option value='年鉴中文名'>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+          <option value='主编'>主编</option>
+          <option value='主编单位' selected=''>主编单位</option>
+          <option value='主题词'>主题词</option>
+        </select>
+        <input type='text' id="qk_3_value1" name="qk_3_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>
+        <select class="font9" id="qk_3_special1"  name="qk_3_special1" onchange="">
+          <option value='%'>模糊</option>
+          <option value='=' selected=''>精确</option>
+        </select>
+        <input type="hidden" value="" id="qk_3_extension" name="qk_3_extension" />
+      </td>
+      </dd>
+
+      <tr class="dd01" style="display:none" id="qk_4">
+        <td nowrap="true" style="width:70px;"  align="left">
+          <select id="qk_4_logical"  name="qk_4_logical">
+            <option value="and" selected="">并含</option>
+            <option value="or">或含</option>
+            <option value="not">不含</option>
+          </select>
+        </td>
+        <td>
+          <select id="qk_4_sel" name="qk_4_sel">
+            <option value='年鉴中文名'>年鉴名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value='主编'>主编</option>
+            <option value='主编单位'>主编单位</option>
+            <option value='主题词' selected=''>主题词</option>
+          </select>
+          <input type='text' id="qk_4_value1" name="qk_4_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>
+          <select class="font9" id="qk_4_special1"  name="qk_4_special1" onchange="">
+            <option value='%'>模糊</option>
+            <option value='=' selected=''>精确</option>
+          </select>
+          <input type="hidden" value="" id="qk_4_extension" name="qk_4_extension" />
+        </td>
+      </tr>
+    </table>
+  <div class="anniu_wxx">
+    <!--<span id="divresult" style="display:none"><A class="b18" href="javascript:SubmitUser();">定制到自定义栏目</A>&nbsp;&nbsp;</span>-->
+    <input type="button" class="butt04" value="检索年鉴" onclick="javascript:SubmitForm('','')">
+</div>
+
+</div>

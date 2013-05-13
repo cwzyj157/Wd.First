@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+	<div style="padding-left:53px">关键词:&nbsp;&nbsp;<input id="subword" type=text style="width:300px">&nbsp;&nbsp;<input type="button" value="试检索" onclick="hotspotsearch()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="结果不错,定制到个人馆" onclick="orderhotspot()"></div>
+	<div style="padding-left:28px"><table ><tr><td>推荐关键词:&nbsp;&nbsp;</td><td id="tuijian" style="width:300px"></td>&nbsp;&nbsp;<td></td></tr></table></div>
+		<div id="source">
+		<input id="orderby" type="hidden" value="研究人员数量" name=orderby></input>						
+		<input id="db_value" type="hidden" value="中国学术期刊网络出版总库,中国博士学位论文全文数据库,中国优秀硕士学位论文全文数据库,中国重要会议论文全文数据库,中国重要报纸全文数据库,中国图书书目数据库,中国专利数据库,中国标准数据库,国家科技成果数据库,中国科技引文数据库,中国社科引文数据库" name="db_name"></input>
+		</div>
+
+		
+		

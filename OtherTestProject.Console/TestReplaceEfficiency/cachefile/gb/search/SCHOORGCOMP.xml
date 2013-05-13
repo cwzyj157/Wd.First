@@ -1,0 +1,99 @@
+﻿<div id="source">
+  <input id="orderby" type="hidden" value="文献篇数" name="orderby"></input>
+  <input type="hidden" name ="navicode" id="navicode"/>
+  <input type="hidden" name ="navifield" id="navifield" value="分类代码"/>
+  <input id="db_name" type="hidden" value="CNKI_SCHOLAR" name="db_name"></input>
+  <input id="stat3_i" type="hidden" value="1" name="stat3_i"></input>
+  <input id="stat3_c" type="hidden" value="4" name="stat3_c"></input>
+  <input id="au_i" type="hidden" value="1" name="au_i"></input>
+  <input id="au_c" type="hidden" value="2" name="au_c"></input>
+  <input id="org_i" type="hidden" value="1" name="au_i"></input>
+  <input id="org_c" type="hidden" value="4" name="au_c"></input>
+  <input id="subword_i" type="hidden" value="1" name="au_i"></input>
+  <input id="subword_c" type="hidden" value="2" name="au_c"></input>
+</div>
+
+
+
+
+
+
+
+
+
+<table id="org">
+	<tr id="org_5">
+		<td width="100px" align="center">
+			
+		</td>
+		<td>
+			<input type="hidden" value='学者单位' id='org_5_sel' name='org_5_sel' />
+			<span>机构名称：　</span>
+			<input type='text' id="org_5_value1" name="org_5_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+
+			<select class="font9" id="org_5_special1"  name="org_5_special1" onchange="">
+				<option value='%' selected=''>模糊</option>
+				<option value='=' >精确</option>
+			</select>
+
+			<input type='hidden' id="org_5_logical"  name="org_5_logical" value="or" />
+		</td>
+	</tr>
+  <tr id="org_1">
+    <td width="100px" align="center">
+      
+    </td>
+    <td>
+      <input type="hidden" value='学者单位' id='org_1_sel' name='org_1_sel' />
+      <span>机构曾用名：</span>
+      <input type='text' id="org_1_value1" name="org_1_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+
+      <select class="font9" id="org_1_special1"  name="org_1_special1" onchange="">
+        <option value='%' selected=''>模糊</option>
+        <option value='=' >精确</option>
+      </select>
+		<input type='hidden' id="org_1_logical"  name="org_1_logical" value="or" />
+    </td>
+  </tr>
+  <tr id="org_2">
+    <td width="100px" >
+		<input type='hidden' id="org_2_logical"  name="org_2_logical" value="or" />
+    </td>
+    <td>
+      <input type="hidden" value='学者单位' id='org_2_sel' name='org_2_sel' />
+      <span>机构曾用名：</span>
+      <input type='text' id="org_2_value1" name="org_2_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+
+      <select class="font9" id="org_2_special1"  name="org_2_special1" onchange="">
+        <option value='%' selected=''>模糊</option>
+        <option value='=' >精确</option>
+      </select>
+    </td>
+  </tr>
+	<tr id="org_3">
+		<td width="100px" >
+			<input type='hidden' id="org_3_logical"  name="org_3_logical" value="or" />
+		</td>
+		<td>
+			<input type="hidden" value='学者单位' id='org_3_sel' name='org_3_sel' />
+			<span>机构曾用名：</span>
+			<input type='text' id="org_3_value1" name="org_3_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+
+			<select class="font9" id="org_3_special1"  name="org_3_special1" onchange="">
+				<option value='%' selected=''>模糊</option>
+				<option value='=' >精确</option>
+			</select>
+		</td>
+	</tr>
+  
+</table>
+
+
+<div class="anniu_wxx">
+  <!--<span id="divresult" style="display:none">
+      <A class="b18" href="javascript:SubmitUser();">定制到自定义栏目</A>&nbsp;&nbsp;</span>-->
+  <span >
+    <input type="button" name="Submit3" value="保存检索配置"  class="butt06" style="cursor:hand" onclick="javascript:SubmitAuthor()">&nbsp;&nbsp;
+  </span>
+  <input type="button" class="butt04" value="检索学者" onclick="javascript:SubmitForm('','')" />
+</div>

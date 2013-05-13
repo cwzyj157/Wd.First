@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DataConfiger>
+	<module id="DbSelect">
+		<![CDATA[	
+			<div class="rightseachlist" id="divdb" style="display:none">
+				<font color="black">选择子库：  </font>
+				<input type="text" name="db_value" style="WIDTH:300px;" ID="db_value" style="ime-mode:disabled;" onkeypress="return false;" value="{value}" class="input_border">
+				<img src="/grid2008/images/liulan.gif" width="23" height="20" align="absmiddle" style="cursor:hand" onClick="MM_openBrWindow('/grid2008/popup/CheckList.aspx','cnki_dbinfo','视图名称','视图名称','数据库分类名称','$db_opt','Form1.db_value',',','popup','scrollbars=yes,width=400,height=350')"></dd>
+			</div>
+		]]>
+	</module>	
+
+	<module id="DbName">
+		<![CDATA[	
+			<input id="db_name" type="hidden" value="{value}" name=db_name></input>
+		]]>
+	</module>	
+		
+	<module id="Src">
+		<![CDATA[	
+			<div class="rightseachlist" id="divsrc">
+				<font color="black"><span id="srctitle">文献来源</span>： </font>
+				<input class="gray input_border" name="{value}" type="text" value=""  style="WIDTH: 254px; " ID="{value}" onFocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000'" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')">
+				<img style="cursor:hand" src="/grid2008/images/languageimages/GB/liulan_ly.gif" onclick="Javascript:MM_openSrcWin('/grid2008/brief/result_src.aspx','$db_opt','CJFD','{value}',3)"/>	
+			</div>  
+		]]>
+	</module>
+
+	<module id="Fund">
+		<![CDATA[	
+			<div class="rightseachlist" id="divfund">
+				<font color="black">国家及各级科研项目：</font>
+				<input class="font9 gray input_border" id="{value}" value="" type="text" style="WIDTH: 254px;" size="6" onFocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000'"
+				onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" name="{value}"></input> 
+				<img style="cursor:hand" onclick="Javascript:MM_openSrcWin('/grid2008/brief/result_src.aspx','$db_opt','FUND','{value}')" src="/grid2008/images/languageimages/GB/liulan_jj.gif" />
+			</div>
+		]]>
+	</module>
+
+	<module id="Navi">
+		<![CDATA[	
+			<div class="rightseachlist" id="div{CompType}">
+				<font color="black">{Title}：</font>
+				<input class="font9 gray input_border" id="{value}" value="{Tip}" type="text" style="WIDTH: 254px;" size="6" onFocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000'"
+				onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" name="{value}"></input> 
+				<img style="cursor:hand" onclick="Javascript:MM_openSrcWin('/grid2008/brief/result_src.aspx','$db_opt','{CompType}','{value}')" src="/grid2008/images/languageimages/GB/liulan_jj.gif" />
+			</div>
+		]]>
+	</module>
+			
+	<module id="Basic">
+		<![CDATA[
+			<div class="rightseachlist" id="div{Value}">	
+				<font color="black">{Title}：</font>
+				<input class="font9 gray input_border" id="{value}" type="text" value="{Tip}" onFocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000'"
+							onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')"
+						name="{Value}" style="WIDTH:130px;"></input>&nbsp;&nbsp;
+				<select class="font9" id="{special}" name="{special}" onChange="">
+						<option value='%' selected>模糊</option>
+						<option value='='>精确</option>
+				</select>
+			</div>
+		]]>
+	</module>		
+	
+	<module id="SubmitSrc">
+		<![CDATA[	
+			<div class="anniu_wxx">
+				<span id="divresult" style="display:none"><A class="b18" href="javascript:SubmitUser();">定制到馆</A>&nbsp;&nbsp;</span><input type="button" class="butt04" value="{Title}" onclick="javascript:SubmitForm('','')">
+			</div>
+		]]>
+	</module>
+	
+	<module id="Submit">
+		<![CDATA[	
+			<div class="anniu_wxx">
+				<span id="divresult" style="display:none"><A class="b18" href="javascript:SubmitUser();">定制到我收藏的检索式</A>&nbsp;&nbsp;<input type="button" name="Submit3" value="在结果中检索"  class="butt06" style="cursor:hand" onclick="javascript:SubmitForm('res','')">&nbsp;&nbsp;</span><input type="button" class="butt04" value="{Title}" ID="Button5" NAME="Button5" style="cursor:hand" onclick="javascript:SubmitForm('','');">
+			</div>
+		]]>
+	</module>									
+</DataConfiger>

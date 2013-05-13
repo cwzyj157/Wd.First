@@ -1,0 +1,69 @@
+﻿<DataConfiger>
+	<zone id="hidden">
+		<![CDATA[<div id="source">
+		  <input id="db_name" type="hidden" value="CPFDBASEINFO" name="db_name" />
+		  <input id="stat1_i" type="hidden" value="1" name="stat1_i" />
+		  <input id="stat1_c" type="hidden" value="2" name="stat1_c" />
+		  <input id="qk_i" type="hidden" value="1" name="qk_i" />
+		  <input id="qk_c" type="hidden" value="2" name="qk_c" />
+		  <input id="orderby" type="hidden" value="载文量" name="orderby" />
+		</div>]]>
+	</zone>
+	<zone id="txt">
+		<![CDATA[<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td height="5" colspan="2" ></td>
+			</tr>
+			<tr class="dd01" id="stat1_1">
+				<td nowrap="true" style="width:70px;">
+					<A href="javascript:AddRow('stat1','stat1_i','stat1_c');">
+						<IMG src='/grid2008/images/01.gif' border='0' /></A>&nbsp;
+					<A href="javascript:DeleteRow('stat1','stat1_i','stat1_c');">
+						<IMG src='/grid2008/images/02.gif' border='0' /></A>
+				</td>
+				<td>
+					<select id='stat1_1_sel' name='stat1_1_sel'>
+						<option value='NAME' selected=''>会议论文集</option>
+						<option value='PROVINCE'>举办地</option>
+					</select>
+					<input type='text' id="stat1_1_value1" name="stat1_1_value1" size="30" maxlength="30"  style="border: 1px solid rgb(127, 157, 185); width: 270px;"/>
+					<select id="stat1_1_special3"  name="stat1_1_special3">
+						<option value='%' selected=''>模糊</option>
+						<option value='='>精确</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="dd01" style="display:none" id="stat1_2">
+				<td nowrap="true" style="width:70px;">
+					<select id="stat1_2_logical"  name="stat1_2_logical">
+						<option value="and" selected="">并含</option>
+						<option value="or">或含</option>
+						<option value="not">不含</option>
+					</select>
+				</td>
+				<td>
+					<select id="stat1_2_sel" name="stat1_2_sel">
+						<option value='NAME'>会议论文集</option>
+						<option value='PROVINCE' selected=''>举办地</option>
+					</select>
+					<input id="stat1_2_value1" name="stat1_2_value1" size="30" maxlength="30"  style="border: 1px solid rgb(127, 157, 185); width: 270px;"/>
+					<select id="stat1_2_special3"  name="stat1_2_special3">
+						<option value='%' selected=''>模糊</option>
+						<option value='='>精确</option>
+					</select>
+				</td>
+			</tr>
+		</table>]]>
+	</zone>
+	<zone id="sub">
+		<![CDATA[<div class="anniu_wxx" style="margin-right:50px">
+			<input type="button" class="butt08" style="cursor:hand;" value="检索会议论文集" onclick="SubmitForm('','')" />
+		</div>]]>
+	</zone>
+</DataConfiger>
+
+
+
+
+
+

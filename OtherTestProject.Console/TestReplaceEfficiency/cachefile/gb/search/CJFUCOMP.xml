@@ -1,0 +1,227 @@
+﻿<!--文化文献来源其期刊配置-->
+<!--add by lzh 2010-8-23-->
+	<div id="source">
+		<input id="db_name" type="hidden" value="CJFUBASEINFO" name=db_name></input>
+		<input id="stat1_i" type="hidden" value="1" name=stat1_i></input>
+		<input id="stat1_c" type="hidden" value="4" name=stat1_c></input>
+		<input id="qk_i" type="hidden" value="1" name=qk_i></input>
+		<input id="qk_c" type="hidden" value="4" name=qk_c></input>
+		<input id="orderby" type="hidden" value="影响因子" name=orderby></input>
+	</div>
+
+	 <div class="dd01">
+     <label style="float:left;padding-top:3px;width:90px;">期刊获得荣誉：</label>
+
+	 <select id="cjfdgift" name="cjfdgift" style="width:205px" length="12">
+      <option value="">全部</option>
+      <option value="百种重点期刊">百种重点期刊</option>
+      <option value="中科双高期刊">中科双高期刊</option>
+      <option value="中科双百期刊">中科双百期刊</option>
+      <option value="中科双效期刊">中科双效期刊</option>
+      <option value="社科双高期刊">社科双高期刊</option>
+      <option value="社科双效期刊">社科双效期刊</option>
+      <option value="社科双奖期刊">社科双奖期刊</option>
+      <option value="Caj-cd规范获奖期刊">Caj-cd规范获奖期刊</option>
+      <option value="全国优秀科技期刊">全国优秀科技期刊</option>
+      <option value="国家期刊奖">国家期刊奖获奖期刊</option>
+      <option value="国家期刊提名奖">国家期刊提名奖期刊</option>
+	 </select>
+	</div>
+	
+	 <div class="dd01">
+     <label style="float:left;padding-top:3px;width:90px;">期刊收录源：</label>
+
+	 <select id="cjfdtype" name="cjfdtype" style="width:205px">
+      <option value="">全部</option>
+      <option value="0003">SCI 科学引文索引(美)</option>
+      <option value="0006">EI 工程索引(美)</option>
+      <option value="0002">SA 科学文摘(英)</option>
+      <option value="0001">CA 化学文摘(美)</option>
+      <option value="0007">中国科学引文数据库</option>
+      <option value="0005">Pж(AJ) 文摘杂志(俄)</option>
+      <option value="0008">中国人文社会科学引文数据库</option>
+	 </select>
+	</div>
+<div class="dd01">
+  <label style="float:left;padding-top:3px;width:90px;">核心期刊：</label>
+
+  <select id="cjfdversion" name="cjfdversion" style="width:205px">
+    <option value="">全部期刊</option>
+    <option value="P0101">北大核心期刊第一版</option>
+    <option value="P0102">北大核心期刊第二版</option>
+    <option value="P0103">北大核心期刊第三版</option>
+    <option value="P0104">北大核心期刊第四版</option>
+    <option value="P0105">北大核心期刊第五版</option>
+    <!--<option value="">非核心期刊</option>-->
+  </select>
+</div>
+			
+	<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr class="dd01" id="stat1_1">
+		<td nowrap="true" style="width:70px;">
+      <input type="button" class="add01" onclick="AddRow('stat1','stat1_i','stat1_c');this.blur();"/>&nbsp;
+      <input type="button" class="pluss02" onclick="DeleteRow('stat1','stat1_i','stat1_c');this.blur();"/>
+		</td>
+		<td>
+			<select id=stat1_1_sel name=stat1_1_sel style= class=><option value='被引频次'selected>期刊文献被引频次</option><option value='下载频次'>期刊文献下载频次</option><option value='影响因子'>期刊影响因子</option><option value='载文量'>载文量</option></select> 
+			<select id="stat1_1_special3"  name="stat1_1_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+			<input id="stat1_1_value1" name="stat1_1_value1" size="10" maxlength="9" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+				
+		<tr class="dd01" style="display:none" id=stat1_2>
+		<td nowrap="true" style="width:70px;"  align="left">
+		<select id="stat1_2_logical"  name="stat1_2_logical">
+			<option value=and selected>并含</option>
+			<option value=or>或含</option>
+			<option value=not>不含</option>
+		</select>
+		</td>
+		<td>
+			<select id=stat1_2_sel name=stat1_2_sel style= class=><option value='被引频次'selected>期刊文献被引频次</option><option value='下载频次'selected>期刊文献下载频次</option><option value='影响因子'>期刊影响因子</option><option value='载文量'>载文量</option></select> 
+		
+			<select id="stat1_2_special3"  name="stat1_2_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+		
+			<input type=text id="stat1_2_value1" name="stat1_2_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+		
+		<tr class="dd01" style="display:none" id=stat1_3>
+		<td nowrap="true" style="width:70px;">
+		<select id="stat1_3_logical"  name="stat1_3_logical">
+			<option value=and selected>并含</option>
+			<option value=or>或含</option>
+			<option value=not>不含</option>
+		</select>
+		</td>
+		<td>
+			<select id=stat1_3_sel name=stat1_3_sel style= class=><option value='被引频次'selected>期刊文献被引频次</option><option value='下载频次'>期刊文献下载频次</option><option value='影响因子'selected>期刊影响因子</option><option value='载文量'>载文量</option></select> 
+		
+			<select id="stat1_3_special3"  name="stat1_3_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+	
+		<input type=text id="stat1_3_value1" name="stat1_3_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+		
+		<tr class="dd01" style="display:none" id=stat1_4>
+		<td nowrap="true" style="width:70px;">
+
+		<select id="stat1_4_logical"  name="stat1_4_logical">
+			<option value=and selected>并含</option>
+			<option value=or>或含</option>
+			<option value=not>不含</option>
+		</select>
+		</td>
+		
+		<td>
+			<select id=stat1_4_sel name=stat1_4_sel style= class=><option value='被引频次'selected>期刊文献被引频次</option><option value='下载频次'>期刊文献下载频次</option><option value='影响因子'>期刊影响因子</option><option value='载文量'selected>载文量</option></select> 
+		
+			<select id="stat1_4_special3"  name="stat1_4_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+		
+			<input type=text id="stat1_4_value1" name="stat1_4_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+	</table>
+	
+	<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr class="dd01" id="qk_1">
+		<td nowrap="true" style="width:70px;">
+      <input type="button" class="add01" onclick="AddRow('qk','qk_i','qk_c');this.blur();"/>&nbsp;
+      <input type="button" class="pluss02" onclick="DeleteRow('qk','qk_i','qk_c');this.blur();"/>
+		</td>
+		<td>
+			<select id=qk_1_sel name=qk_1_sel onchange="javascript:SearchExt('qk_1','CN,ISSN');"><option value='C_NAME,曾用刊名'selected>刊名</option><option value='CN'>CN</option><option value='ISSN'>ISSN</option><option value='主办单位1'>主办单位</option></select> 
+			<input type=text id="qk_1_value1" name="qk_1_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 176px;"/>	
+			<select class="font9" id="qk_1_special1"  name="qk_1_special1" onchange="">
+			<option value='%' selected>模糊</option>
+			<option value='='>精确</option>
+			</select>
+			<input type="hidden" value="" id="qk_1_extension" name="qk_1_extension" />
+		</td>
+		</tr>
+		
+		<tr class="dd01" style="display:none" id=qk_2>
+		<td nowrap="true" style="width:70px;"  align="left">
+			<select id="qk_2_logical"  name="qk_2_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=qk_2_sel name=qk_2_sel onchange="javascript:SearchExt('qk_2','CN,ISSN');"><option value='C_NAME,曾用刊名'selected>刊名</option><option value='CN'selected>CN</option><option value='ISSN'>ISSN</option><option value='主办单位1'>主办单位</option></select> 
+			<input type=text id="qk_2_value1" name="qk_2_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 176px;" />
+			<select class="font9" id="qk_2_special1"  name="qk_2_special1" onchange="">
+				<option value='%'>模糊</option>
+				<option value='=' selected>精确</option>
+			</select>
+			<input type="hidden" value="" id="qk_2_extension" name="qk_2_extension" />	
+		</td>
+		</tr>
+		
+		<tr class="dd01" style="display:none" id=qk_3>
+		<td nowrap="true" style="width:70px;"  align="left">
+			<select id="qk_3_logical"  name="qk_3_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=qk_3_sel name=qk_3_sel onchange="javascript:SearchExt('qk_3','CN,ISSN');"><option value='C_NAME,曾用刊名'selected>刊名</option><option value='CN'>CN</option><option value='ISSN'selected>ISSN</option><option value='主办单位1'>主办单位</option></select> 
+			<input type=text id="qk_3_value1" name="qk_3_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 176px;"/>	
+			<select class="font9" id="qk_3_special1"  name="qk_3_special1" onchange="">
+			<option value='%'>模糊</option>
+			<option value='=' selected>精确</option>
+			</select>
+			<input type="hidden" value="" id="qk_3_extension" name="qk_3_extension" />				
+		</td>
+		</dd>
+		
+		<tr class="dd01" style="display:none" id=qk_4>
+		<td nowrap="true" style="width:70px;"  align="left">
+			<select id="qk_4_logical"  name="qk_4_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=qk_4_sel name=qk_4_sel onchange="javascript:SearchExt('qk_4','CN,ISSN');"><option value='C_NAME,曾用刊名'selected>刊名</option><option value='CN'>CN</option><option value='ISSN'>ISSN</option><option value='主办单位1'selected>主办单位</option></select> 
+			<input type=text id="qk_4_value1" name="qk_4_value1" maxlength="100" style="BORDER-RIGHT:#7F9DB9 1px solid;BORDER-TOP:#7F9DB9 1px solid;BORDER-LEFT:#7F9DB9 1px solid;WIDTH:176px;BORDER-BOTTOM:#7F9DB9 1px solid"  />	
+			<select class="font9" id="qk_4_special1"  name="qk_4_special1" onchange="">
+			<option value='%'>模糊</option>
+			<option value='=' selected>精确</option>
+			</select>
+			<input type="hidden" value="" id="qk_4_extension" name="qk_4_extension" />		
+		</td>
+		</tr>
+	</table>
+	<div class="anniu_wxx">
+    <!--<span id="divresult" style="display:none"><A class="b18" href="javascript:SubmitUser();">定制到自定义栏目</A>&nbsp;&nbsp;</span>-->
+    <!--<input type="checkbox" id="pp_extension" name="pp_extension"/><font color="red" >仅限优先出版期刊</font>&nbsp;&nbsp;--><input type="button" class="butt04" value="检索期刊" onclick="javascript:SubmitForm('','')"></div>
+

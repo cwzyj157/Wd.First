@@ -1,0 +1,210 @@
+	
+	
+
+		<div id="source">
+		<input id="orderby" type="hidden" value="" name=orderby></input>						
+		<input id="db_name" type="hidden" value="CNKI_DEPT" name=db_name></input>
+		<input id="stat2_i" type="hidden" value="1" name=stat2_i></input>
+		<input id="stat2_c" type="hidden" value="4" name=stat2_c></input>
+		<input id="inst_i" type="hidden" value="1" name=inst_i></input>
+		<input id="inst_c" type="hidden" value="3" name=inst_c></input>
+		<input id="expertvalue" type="hidden" value="专业标志=1" name="expertvalue"></input>
+		</div>
+		
+		<table id="stat2">
+		<tr id=stat2_1>
+		<td nowrap="true" style="width:70px;">
+		<A href="javascript:AddRow('stat2','stat2_i','stat2_c');"><IMG src='/grid2008/images/01.gif' border=0></A>&nbsp;<A href="javascript:DeleteRow('stat2','stat2_i','stat2_c');"><IMG src='/grid2008/images/02.gif' border=0></A>&nbsp;&nbsp;
+		</td>
+		<td>
+			<select id=stat2_1_sel name=stat2_1_sel>
+        <option value='专业核心期刊发文数' selected>专业核心期刊论文数</option>
+        <option value='核心期刊发文总量'>核心期刊发文总量</option>
+        <option value='专业基金论文数'>专业基金论文数</option>
+        <option value='专业被引次数'>专业被引频次</option>
+        <option value='专业下载次数'>专业下载频次</option>
+      </select> 
+			
+			<select id="stat2_1_special3"  name="stat2_1_special3">
+				<option value='='>等于</option>
+				<option value='>' >大于</option>
+				<option value='<' >小于</option>
+				<option value='>=' selected >大于等于</option>
+				<option value='<=' >小于等于</option>
+			</select>	
+			
+			<input type=text id="stat2_1_value1" name="stat2_1_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+		<tr style="display:none" id=stat2_2>
+		<td nowrap="true" style="width:70px;">
+			<select id="stat2_2_logical"  name="stat2_2_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=stat2_2_sel name=stat2_2_sel style= class=><option value='专业核心期刊发文数'>专业核心期刊论文数</option><option value='核心期刊发文总量'>核心期刊发文总量</option><option value='专业基金论文数' selected>专业基金论文数</option><option value='专业被引次数'>专业被引频次</option><option value='专业下载次数'>专业下载频次</option></select> 
+						
+			<select id="stat2_2_special3"  name="stat2_2_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+			
+			<input type=text id="stat2_2_value1" name="stat2_2_value1" size="10" maxlength="10" onkeypress="KeyPress(this);" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+		<tr style="display:none" id=stat2_3>
+		<td nowrap="true" style="width:70px;">
+
+			<select id="stat2_3_logical"  name="stat2_3_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=stat2_3_sel name=stat2_3_sel style= class=><option value='专业核心期刊发文数'>专业核心期刊论文数</option><option value='核心期刊发文总量' selected>核心期刊发文总量</option><option value='基金发文总量' >专业基金论文数</option><option value='专业被引次数'>专业被引频次</option><option value='专业下载次数'>专业下载频次</option></select> 
+			
+			<select id="stat2_3_special3"  name="stat2_3_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+				
+			<input type=text id="stat2_3_value1" name="stat2_3_value1" size="10" maxlength="10" onkeypress="KeyPress(this);" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>		
+		</td>
+		</tr>
+		<tr style="display:none" id=stat2_4>
+		<td nowrap="true" style="width:70px;">
+
+			<select id="stat2_4_logical"  name="stat2_4_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=stat2_4_sel name=stat2_4_sel style= class=><option value='专业核心期刊发文数'>专业核心期刊论文数</option><option value='核心期刊发文总量'>核心期刊发文总量</option><option value='基金发文总量' selected>基金发文总量</option><option value='专业被引次数' >专业被引次数</option><option value='专业下载次数'>专业下载次数</option></select> 
+			
+			<select id="stat2_4_special3"  name="stat2_4_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+
+			<input type=text id="stat2_4_value1" name="stat2_4_value1" size="10" maxlength="10" onkeypress="KeyPress(this);" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+		<tr style="display:none" id=stat2_5>
+		<td nowrap="true" style="width:70px;">
+			<select id="stat2_5_logical"  name="stat2_5_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=stat2_5_sel name=stat2_5_sel style= class=><option value='专业核心期刊发文数'>专业核心期刊论文数</option><option value='核心期刊发文总量'>核心期刊发文总量</option><option value='基金发文总量'>基金发文总量</option><option value='专业被引次数' selected>专业被引频次</option><option value='专业下载次数' >专业下载频次</option></select> 
+				
+			<select id="stat2_5_special3"  name="stat2_5_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+			
+			<input type=text id="stat2_5_value1" name="stat2_5_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+		
+		<tr style="display:none" id=stat2_6>
+		<td nowrap="true" style="width:70px;">
+			<select id="stat2_6_logical"  name="stat2_6_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=stat2_6_sel name=stat2_6_sel style= class=><option value='专业核心期刊发文数'>专业核心期刊论文数</option><option value='核心期刊发文总量'>核心期刊发文总量</option><option value='基金发文总量'>基金发文总量</option><option value='专业被引次数'>专业被引频次</option><option value='专业下载次数' selected>专业下载频次</option></select> 
+				
+			<select id="stat2_6_special3"  name="stat2_6_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected>大于等于</option>
+				<option value='<='>小于等于</option>
+			</select>	
+			
+			<input type=text id="stat2_6_value1" name="stat2_6_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>	
+		</td>
+		</tr>
+		</table>
+		
+		<table id="inst">
+		
+		<tr id=inst_1>
+		<td nowrap="true" style="width:70px;">
+			<A href="javascript:AddRow('inst','inst_i','inst_c');"><IMG src='/grid2008/images/01.gif' border=0></A>&nbsp;<A href="javascript:DeleteRow('inst','inst_i','inst_c');"><IMG src='/grid2008/images/02.gif' border=0></A>&nbsp;&nbsp;
+		</td>
+		<td>
+			<select id=inst_1_sel name=inst_1_sel style= class=><option value='机构名称'selected>研究机构名称</option><option value='所在地域'>所在地域</option></select> 
+			
+			<input type=text id="inst_1_value1" name="inst_1_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>	
+			<select class="font9" id="inst_1_special1"  name="inst_1_special1" onchange="">
+				<option value='%' selected=''>模糊</option>
+				<option value='=' >精确</option>
+			</select>		
+		</td>
+		</tr>
+		<tr style="display:none" id=inst_2>
+		<td nowrap="true" style="width:70px;">
+			<select id="inst_2_logical"  name="inst_2_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=inst_2_sel name=inst_2_sel style= class=><option value='机构名称'selected>研究机构名称</option><option value='所在地域' selected>所在地域</option></select> 
+			
+			<input type=text id="inst_2_value1" name="inst_2_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>	
+			
+			<select class="font9" id="inst_2_special1"  name="inst_2_special1" onchange="">
+				<option value='%' selected=''>模糊</option>
+				<option value='=' >精确</option>
+			</select>
+		</td>
+		</tr>
+		<tr style="display:none" id=inst_3>
+		<td nowrap="true" style="width:70px;">
+			<select id="inst_3_logical"  name="inst_3_logical">
+				<option value=and selected>并含</option>
+				<option value=or>或含</option>
+				<option value=not>不含</option>
+			</select>
+		</td>
+		<td>
+			<select id=inst_3_sel name=inst_3_sel style= class=><option value='机构名称'selected>研究机构名称</option><option value='所在地域'selected>所在地域</option></select> 
+			
+			<input type=text id="inst_3_value1" name="inst_3_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>	
+				
+			<select class="font9" id="inst_3_special1"  name="inst_3_special1" onchange="">
+				<option value='%' selected=''>模糊</option>
+				<option value='=' >精确</option>
+			</select>		
+		</td>
+		</tr>
+		</table>
+
+		<div class="anniu_wxx"><!--<span id="divresult" style="display:none"><A class="b18" href="javascript:SubmitUser();">定制到自定义栏目</A>&nbsp;&nbsp;</span>--><input type="button" class="butt04" value="检索机构" onclick="javascript:SubmitForm('','')"></div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<DataConfiger>
+	<!--page元素为一种特定的页面配置,相当于页面模版-->
+	<page name="Normal" type="file" key="dbCatalog" winname="result" winstyle="width=100px;height=100px;">
+		<Head id="divhead" style="" classname="" configfile="" type="ascx"></Head>
+		<Link id="divlink" style="" classname="" configfile="" type="ascx"></Link>
+		<Search id="divsearch" style="" classname="" configfile="" type="dll" assembly="">
+			<Switch></Switch>
+			<Condition></Condition>
+			<Result></Result>
+			
+		</Search>
+		<Navi id="divnavi" style="" classname="" configfile="" type="ascx" ></Navi>
+		<History id="divhis" style="" classname="" configfile="" type="ascx"></History>
+		<Group id="divgroup" style="" classname="" configfile="" type="dll" assembly=""></Group>
+		<Brief id="divbrief" style="" classname="" configfile="" type="iframe"></Brief>
+		<Recommend id="divrecommend" style="" classname="" configfile="" type="ascx"></Recommend>
+		<Tool id="divtool" style="" classname="" configfile="" type="ascx"></Tool>
+		<Other id="divother" style="" classname="" configfile="" type="dll" assembly=""></Other>
+		<foot id="divfoot" style="" classname="" configfile="" type="iframe"></foot>
+	</page>
+</DataConfiger>

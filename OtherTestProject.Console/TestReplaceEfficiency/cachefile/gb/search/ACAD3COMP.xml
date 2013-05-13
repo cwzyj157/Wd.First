@@ -1,0 +1,63 @@
+﻿<DataConfiger>
+	<zone id="txt">
+		<![CDATA[<div class="rightseachlist" id="divau">
+			<table id="tblau" width="100%">
+				<tr>
+					<td nowrap="true" width="30px" height="25">&nbsp;&nbsp;</td>
+					<td width="95%">
+						<table>
+							<tr>
+								<td width="17%">
+									<font color="black">学者姓名：</font>
+								</td>
+								<td width="83%">
+									<input class="font9 gray" id="au_1_value1" value="" type="text" style="border: 1px solid rgb(127, 157, 185); width: 400px;" size="6" onFocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000'"
+									onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" name="au_1_value1" />
+									<select class="font9" id="au_1_special1" name="au_1_special1" >
+										<option value='%' selected='selected'>模糊</option>
+										<option value='='>精确</option>
+									</select>
+									<input type="hidden" id="au_1_sel" name="au_1_sel" value="学者"/>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table id="tblorg" width="100%">
+				<tr id="org_1">
+					<td nowrap="true" width="30px" height="25"></td>
+					<td width="95%">
+						<table>
+							<tr>
+								<td width="17%">
+									<font color="black">工作单位：</font>
+								</td>
+								<td>
+									<input class="font9 gray" type="text" id="org_1_value1" name="org_1_value1" value="" size="10" maxlength="120" onFocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000';document.getElementById('currentid').value=this.id;"
+										onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" style="border: 1px solid rgb(127, 157, 185); width: 400px;" />
+									<select class="font9" id="org_1_special1" name="org_1_special1" >
+										<option value='%' selected=''>模糊</option>
+										<option value='='>精确</option>
+									</select>
+									<input type="hidden" id="org_1_sel" name="org_1_sel" value="学者单位" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>]]>
+	</zone>
+	<zone id="hidden">
+		<![CDATA[<div id="source">
+			<input id="db_name" type="hidden" value="CNKI_MASTERTUTOR" name="db_name" />
+			<input id="orderby" type="hidden" value="文献量" name="orderby" />
+		</div>]]>
+	</zone>
+	<zone id="sub">
+		<![CDATA[<div class="anniu_wxx">
+			<input type="button" class="butt04" value="检索学者" onclick="SubmitForm('','')" />
+		</div>]]>
+	</zone>
+</DataConfiger>

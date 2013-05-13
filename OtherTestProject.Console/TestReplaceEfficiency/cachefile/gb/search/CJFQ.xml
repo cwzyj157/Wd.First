@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<DataConfiger>
+	<!--子区域:通用资源-->
+	<zone id="db">
+		<![CDATA[
+			<input id="db_name" type="hidden" value="中国学术期刊网络出版总库" name=db_name></input>
+		]]>
+	</zone>						
+</DataConfiger>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--主题资源检索配置文件-->
+<DataConfiger>
+	
+
+	<!--子区域:文献提交-->
+	<zone id="sub">
+		<![CDATA[
+			<input id="txt_i" type="hidden" value="1" name="au_i"></input> 
+			<input id="au_c" type="hidden" value="4" name="au_c"></input>
+			<div style="text-align:right;padding-right:30px;padding-top:5px;" >
+					<input type="checkbox" id="pp_extension" name="pp_extension"/><font color="red" >仅限优先出版文献</font>&nbsp;&nbsp;<span id="divresult" style="display:none" ><input type="button" name="Submit3" value="在结果中检索"  class="butt08" style="cursor:hand" onclick="javascript:SubmitForm('res','')">&nbsp;&nbsp;</span><input type="button" class="butt04" value="主题试检索" ID="Button5" NAME="Button5" style="cursor:hand" onclick="javascript:SubmitForm('','');">
+			</div>
+		]]>
+	</zone>
+	
+	<!--子区域:保存表达式-->	
+	<zone id="saveqry">
+		<![CDATA[	
+			<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td height="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="1" bgcolor="#d6d6d6">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="5">
+                    </td>
+                </tr>
+            </table>
+            
+            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td height="26">
+                        <div class="rightseachtitle">
+                            <div style="float: left; margin-right: 356px">
+                                <strong>检索结果分组筛选：</strong></div>
+                            <div class="class_grid_jcbg01">
+                                <div style="color: #000; float: left; height: 16px; padding: 6px 0 0 6px;">
+                                    检索结果不错，</div>
+                                <div style="padding-top: 4px; margin-right: 16px; float: left" id="divresult">
+                                    <a href="javascript:SubmitUser();">定制到主题文献馆</a>
+                                </div>
+                            </div>
+                        </div>
+                       <div id="divqry" class="i_collection" style="DISPLAY: none">
+				<div class="i_collectiontext">
+					<div class="i_collectionlist" id="divqrylogin" name="divqrylogin" style="padding-bottom:10px;">
+						请先登录或<a href="http://my.cnki.net/elibRegister/PersonlibInfo.aspx" target="_blank">创建个人数字图书馆</a><br />
+						用户名：<input type="text" name="username" onKeyDown="if(event.keyCode==13) {SubmitKey('login');}" ID="username" class="input input_border"/>&nbsp;&nbsp;&nbsp;&nbsp;
+						密码：<input type="password" name="password" onKeyDown="if(event.keyCode==13) {SubmitKey('login');}" ID="password"  class="input input_border"/>&nbsp;&nbsp;&nbsp;&nbsp;	
+						<input type="button" name="btnlogin" id="btnlogin" value="登 录" onclick="if(checklogin()) SubmitUser(1);" style="cursor:pointer"/>
+					</div>
+					<div class="i_collectionlist" id="divqrylogin2" name="divqrylogin2" style="padding-bottom:10px;display:none;">
+						<span id="divqrytip" name="divqrytip">请输入管理员密码：</span><input type="password" name="superpwd" onKeyDown="if(event.keyCode==13) {SubmitKey('login');}" ID="superpwd" class="input input_border"/>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="button" name="btnlogin2" id="btnlogin2" value="登 录" onclick="if(checklogin2()) SubmitSuperUser();" style="cursor:pointer"/>
+					</div>
+					<div class="i_collectionlist" id="divqrysave" name="divqrysave" style="display:none">
+						<table cellspacing="1" cellpadding="3" width="600" bgcolor="#0090ff" border="0">
+                                <tr>
+                                    <td bgcolor="#ffffff" height="51">
+                                        <table cellspacing="0" cellpadding="0" width="590" border="0">
+                                            <tr>
+                                                <td width="51">
+                                                    &nbsp;
+                                                </td>
+                                                <td width="445">
+                                                    主题资源库名称 :
+                                                    <input id="qryname" style="border-right: #7f9db9 1px solid; border-top: #7f9db9 1px solid;
+                                                        border-left: #7f9db9 1px solid; width: 150px; border-bottom: #7f9db9 1px solid"
+                                                        onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" type="text"
+                                                        name="qryname">
+                                                    例如：电子商务
+                                                </td>
+                                                <td width="114">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td align="right">
+                                                    <a href="javascript:SaveQuery();">
+                                                        <img height="17" src="../images/gr-anniu-bc.jpg" width="41" border="0"></a>&nbsp;
+                                                    <a href="javascript:HideDiv('divqry');">
+                                                        <img height="17" src="../images/gr-anniu-qx.jpg" width="41" border="0"></a>&nbsp;
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+					</div>
+				</div>
+				<div class="i_collectionclose" onclick="HideDiv('divqry')" style="cursor:pointer">关闭</div>
+				<div style="clear:both;"></div>
+			</div>
+                        <input type="hidden" id="title" value="yes" />
+                    </td>
+                </tr>
+                </table>
+		]]>
+	</zone>
+
+  <zone id="expert">
+    <![CDATA[
+			<div id="expert" style="">
+				<table id="Table39" width="96%" cellspacing="0" cellpadding="0" border="0" align="center">
+				<tbody>
+					<tr><td>检索表达式：</td></tr>
+					<tr>
+						<td width="62%" align="center" class="b18">
+								<textarea name="expertvalue" id="expertvalue" onkeypress="TextLimit(this.id);" rows="5" cols="60"  class="input_border"></textarea>						</td>
+						<td valign="bottom" class="b18">
+            <a href="/grid2008/help/jiansuoyufa/help_yufa.htm" target="_blank">检索表达式语法</a><br/><br/><br/>
+						<input id="Button5" class="butt04" type="button" onclick="javascript:SubmitForm('','');" style="" name="Button5" value="主题试检索"/>						</td>
+					</tr>
+          <tr>
+						<td height="30" colspan="2" class="b18" style="line-height:18px;">
+						<span class="ys_yellow">可检索字段:</span>
+						</td>
+						</tr>
+            <tr>
+						<td height="30" colspan="2" class="b18" style="line-height:18px;">
+						
+						SU=主题,TI=题名,KY=关键词,AB=摘要,FT=全文,AU=作者,FI=第一责任人,AF=机构,JN=中文刊名&英文刊名, RF=引文,YE=年,FU=基金,CLC=中图分类号,SN=ISSN,CN=统一刊号,IB=ISBN ,CF=被引频次					 </td>
+						</tr>
+            <tr>
+						<td height="30" colspan="2" class="b18" style="line-height:18px;">
+						<span class="ys_yellow">示例：</span>
+						</td>
+						</tr>
+                        <tr>
+						<td height="30" colspan="2" class="b18" style="line-height:18px;">
+						<span class="ys_yellow">1）TI=中国 and KY=生态文明 and (AU%胡+李)
+   可以检索到“篇名”包括“中国”并且关键词包括“生态文明”并且作者为“李”姓和“胡”姓的所有文章；
+</span>
+						</td>
+						</tr>
+            <tr>
+						<td height="30" colspan="2" class="b18" style="line-height:18px;">
+						<span class="ys_yellow">
+2）SU = 北京*奥运 and AB=环境保护
+   可以检索到主题包括“北京”及“奥运”并且摘要中包括“环境保护”的信息。</span>
+						</td>
+						</tr>
+            
+
+				</tbody>
+				</table>
+			</div>
+			<input type="hidden" value="relevant" name="orderby" id="orderby" />
+		]]>
+  </zone>
+</DataConfiger>

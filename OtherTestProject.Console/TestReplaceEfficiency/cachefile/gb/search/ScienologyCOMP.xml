@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DataConfiger>  
+  <zone id="dbscho">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="" /> 
+    <input id="NaviField" name="NaviField" type="hidden" value="168专题代码" />
+    <input type="hidden" value="G002" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbcjfq">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="CJFQ" />
+    <input id="NaviField" name="NaviField" type="hidden" value="168专题代码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G003" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbcdfd">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="CDFD" />
+    <input id="NaviField" name="NaviField" type="hidden" value="168专题代码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G004" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbcmfd">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="CMFD" />
+    <input id="NaviField" name="NaviField" type="hidden" value="168专题代码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G004" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbcpfd">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="CPFD" />
+    <input id="NaviField" name="NaviField" type="hidden" value="168专题代码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G005" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbcpfq">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="CPFQ" />
+    <input id="NaviField" name="NaviField" type="hidden" value="所属学科编码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G005A" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbccnd">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="CCND" />
+    <input id="NaviField" name="NaviField" type="hidden" value="168专题代码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G006" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbcyfd">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="CYFD" />
+    <input id="NaviField" name="NaviField" type="hidden" value="168专题代码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G007" id="stylecode"/>
+		]]>
+  </zone>
+  <zone id="dbproj">
+    <![CDATA[
+		<input id="db_value" name="db_value" type="hidden" value="PROJ" />
+    <input id="NaviField" name="NaviField" type="hidden" value="涉及学科代码" />
+    <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+    <input type="hidden" value="G008" id="stylecode"/>
+		]]>
+  </zone>
+  <!--子区域:标签开始-->
+  <zone id="lbls">
+    <![CDATA[
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+    ]]>
+  </zone> 
+  <!--子区域:标签结束-->
+  <zone id="lble">
+    <![CDATA[
+    </table>			  
+		]]>
+  </zone> 
+  <!--子区域:文献来源-->
+  <zone id="src">
+    <![CDATA[			
+      <tr>
+        <td><strong>&nbsp;文献出版来源</strong></td>
+        <td colspan="3"><label>
+          <input type="hidden" id="src_1_sel" name="src_1_sel" value="文献来源">
+          <input class="textfield3" type="text" name="src_1_value1" id="src_1_value1" value="" onfocus="if(KeywordVal(this.value)==false) this.value='';" onkeypress="SignVal(this,'sign')"/>
+        </label>
+        <input type="button" value="文献来源列表" class="ly" onclick="Javascript:MM_openSrcWin('/grid2008/brief/result_src.aspx','中国学术文献网络出版总库','CJFQ','src_1_value1',3)"/>
+        <select id="src_1_special1" name="src_1_special1" class="select">
+          <option value='%' >模糊</option>
+					<option value='=' selected>精确</option>
+        </select>
+        </td>
+      </tr>
+		]]>
+  </zone> 
+  <!--子区域:文献提交-->
+  <zone id="sub">
+    <![CDATA[
+     <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td width="387">&nbsp;</td>
+      <td width="262"><input name="input2" type="button" class="ly" value="检索文献" onclick="SubmitForm('','');"/></td>
+     </tr>    
+		]]>
+  </zone>
+  <!--子区域:隐藏表单_文献-->
+  <zone id="hidden">
+    <![CDATA[   
+		  <input id="txt_i" type="hidden" value="1" name="txt_i" />
+		  <input id="txt_c" type="hidden" value="2" name="txt_c" /> 
+		  <input id="au_i" type="hidden" value="1" name="au_i" /> 
+		  <input id="au_c" type="hidden" value="2" name="au_c" />
+		  <input type="hidden" value="" name="srccode" id="srccode" />
+		  <input type="hidden" value="" name="srcfield" id="srcfield" />
+		  <input type="hidden" value="" name="cjfdcode" id="cjfdcode" />
+		  <input type="hidden" value="" name="expertvalue" id="expertvalue" />
+		  <input type="hidden" value="" name="navilist" id="navilist" />
+		  <input type="hidden" value="relevant" name="orderby" id="orderby" />
+		  <input type="hidden" value="" name="updatedate" id="updatedate" />
+		  <input type="hidden" name="SearchFieldRelationDirectory" value="题名/[],作者/[作者],作者单位/[],关键词/[],主题/[],全文/[]" ID="SearchFieldRelationDirectory"/>   
+		]]>
+  </zone>
+  <!--子区域:隐藏表单_作者发文-->
+  <zone id="hidden_au">
+    <![CDATA[     		
+      <input id="db_name" type="hidden" value="CNKI_SCHOLAR" name="db_name"/>        
+      <input id="auscho1_i" type="hidden" value="1" name="auscho1_i"/>
+      <input id="auscho1_c" type="hidden" value="2" name="auscho1_c"/>
+		]]>
+  </zone>
+  <!--子区域:学者-->
+  <zone id="auscho">
+    <![CDATA[
+     <tr>
+      <td width="27">&nbsp;</td>
+      <td width="54">&nbsp;</td>
+      <td colspan="2"><span>作者姓名</span>
+      <label>
+         <input type="hidden" value="学者" id="auscho_1_sel" name="auscho_1_sel" />
+         <input class="textfield1" type="text" id="auscho_1_value1" name="auscho_1_value1"/>
+         <select id="auscho_1_special1" name="auscho_1_special1" class="select">
+           <option value='%' >模糊</option>
+           <option value='=' selected=''>精确</option>
+         </select>
+       </label></td>
+    </tr>
+    <tr id="auscho1_1">
+      <td>&nbsp;</td>
+      <td>
+      <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('auscho1','auscho1_i','auscho1_c');"/>&nbsp;
+      <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('auscho1','auscho1_i','auscho1_c');"/>
+      </td>
+      <td colspan="2"><span>工作单位</span>
+        <input type="hidden" value="学者单位" id="auscho1_1_sel" name="auscho1_1_sel"/>
+        <input class="textfield1" type="text" id="auscho1_1_value1" name="auscho1_1_value1"/>
+        <select id="auscho1_1_special1"  name="auscho1_1_special1" class="select">
+          <option value='%' selected=''>模糊</option>
+          <option value='=' >精确</option>
+        </select>
+      </td>
+    </tr>
+    <tr style="display:none" id="auscho1_2">
+      <td>&nbsp;</td>
+      <td>
+        <select id="auscho1_2_logical"  name="auscho1_2_logical">
+          <option value="and" selected="">并含</option>
+          <option value="or">或含</option>
+          <option value="not">不含</option>
+        </select>
+      </td>
+      <td colspan="2"><span>工作单位</span>
+        <input type="hidden" value='学者单位' id='auscho1_2_sel' name='auscho1_2_sel' />
+        <input class="textfield1" type="text" id="auscho1_2_value1" name="auscho1_2_value1"/>
+        <select id="auscho1_2_special1"  name="auscho1_2_special1" class="select">
+          <option value='%' selected=''>模糊</option>
+          <option value='=' >精确</option>
+        </select>
+      </td>
+    </tr>
+    <tr id="auscho2_1">
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="2"><span>研究方向关键词</span>
+        <input type='hidden' id="auscho2_1_sel" name="auscho2_1_sel" value="研究领域,研究方向,学者知识向量"/>
+        <input class="textfield6" type="text" id="auscho2_1_value1" name="auscho2_1_value1"/>
+        <select id="auscho2_1_special1"  name="auscho2_1_special1" class="select">
+          <option value='%' selected=''>模糊</option>
+          <option value='=' >精确</option>
+        </select>
+      </td>
+    </tr>
+    <tr id="auscho2_2">
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="2"><span>获自助国家科研基金</span>
+      <input type="hidden" id="auscho2_2_logical"  name="auscho2_2_logical" value="and" />
+      <input type="hidden" id='auscho2_2_sel' name='auscho2_2_sel' value='荣获资助' />
+      <input class="textfield1" type="text" id="auscho2_2_value1" name="auscho2_2_value1"/>
+      <input name="input" type="button" class="ly" value="基金列表" onclick="Javascript:MM_openSrcWin('/grid2008/brief/brief_navi.aspx','中国学术文献网络出版总库','auscho2','auscho2_2_value1')"/>
+      <select id="auscho2_2_special1" name="auscho2_2_special1" class="select">
+        <option value='%' selected=''>模糊</option>
+        <option value='=' >精确</option>
+      </select>     
+     </td>
+    </tr>
+		]]>
+  </zone>
+  <!--子区域:文献来源-->
+  <zone id="srcli">
+    <![CDATA[     
+   		<ul id="srcul"> 
+        <li class="another1"><a href="#" onclick="ChangeTab(this,'','srccjfq','divsrc',1)">学术期刊</a></li>
+        <li class="another1"><a href="#" onclick="ChangeTab(this,'','srccpfd','divsrc',1)">会议论文集</a></li>
+        <li class="another1"><a href="#" onclick="ChangeTab(this,'','srcccnd','divsrc',1)">报   纸</a></li>
+        <li class="another1"><a href="#" onclick="ChangeTab(this,'','srccyfd','divsrc',1)">年鉴（种）</a></li>
+        <li class="another1"><a href="#" onclick="ChangeTab(this,'','srccdfd','divsrc',1)">博士授予点</a></li>
+        <li class="another1"><a href="#" onclick="ChangeTab(this,'','srccmfd','divsrc',1)">硕士授予点</a></li>
+      </ul>
+      <div class="clear"></div>
+      <div id="divsrc"></div>
+    ]]>
+  </zone>
+  <!--子区域:期刊-->
+  <zone id="srccjfq">
+    <![CDATA[ 
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+     <tr>
+        <td width="36"></td>
+        <td width="104">期刊获得荣誉</td>
+        <td width="590"><label>
+          <select id="cjfdgift" name="cjfdgift" class="all2">
+            <option value="">全部</option>
+            <option value="百种重点期刊">百种重点期刊</option>
+            <option value="中科双高期刊">中科双高期刊</option>
+            <option value="中科双百期刊">中科双百期刊</option>
+            <option value="中科双效期刊">中科双效期刊</option>
+            <option value="社科双高期刊">社科双高期刊</option>
+            <option value="社科双效期刊">社科双效期刊</option>
+            <option value="社科双奖期刊">社科双奖期刊</option>
+            <option value="Caj-cd规范获奖期刊">Caj-cd规范获奖期刊</option>
+            <option value="全国优秀科技期刊">全国优秀科技期刊</option>
+            <option value="国家期刊奖">国家期刊奖获奖期刊</option>
+            <option value="国家期刊提名奖">国家期刊提名奖期刊</option>
+	       </select>
+        </label>
+       </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>期刊的收录源</td>
+        <td>
+        <select id="cjfdtype" name="cjfdtype" class="all2">
+          <option value="">全部</option>
+          <option value="0003">SCI 科学引文索引(美)</option>
+          <option value="0006">EI 工程索引(美)</option>
+          <option value="0002">SA 科学文摘(英)</option>
+          <option value="0001">CA 化学文摘(美)</option>
+          <option value="0007">中国科学引文数据库</option>
+          <option value="0005">Pж(AJ) 文摘杂志(俄)</option>
+          <option value="0008">中国人文社会科学引文数据库</option>
+	     </select>
+       </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>核心期刊</td>
+        <td>
+        <select id="cjfdversion" name="cjfdversion" class="all2">
+          <option value="">全部期刊</option>
+          <option value="P0101">北大核心期刊第一版</option>
+          <option value="P0102">北大核心期刊第二版</option>
+          <option value="P0103">北大核心期刊第三版</option>
+          <option value="P0104">北大核心期刊第四版</option>
+        </select>
+        </td>
+      </tr>
+      <tr id="stat1_1">
+        <td>&nbsp;</td>
+        <td>
+          <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('stat1','stat1_i','stat1_c');"/>&nbsp;
+          <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('stat1','stat1_i','stat1_c');"/>
+        </td>
+        <td>
+        <select id="stat1_1_sel" name="stat1_1_sel" class="select">
+          <option value="被引频次" selected>期刊文献被引频次</option>
+          <option value="下载频次">期刊文献下载频次</option>
+          <option value="影响因子">期刊影响因子</option>
+          <option value="载文量">载文量</option>          
+        </select> 
+			  <select id="stat1_1_special3"  name="stat1_1_special3" class="select">
+				  <option value="=">等于</option>
+				  <option value=">">大于</option>
+				  <option value="<">小于</option>
+				  <option value=">=" selected>大于等于</option>
+				  <option value="<=">小于等于</option>
+			  </select>	
+			  <input class="textfield6" id="stat1_1_value1" name="stat1_1_value1" onkeypress="KeyPress(this);" type="text"/>	
+       </td>
+      </tr>
+      <tr id="stat1_2" style="display:none;">
+        <td>&nbsp;</td>
+        <td>
+          <select id="stat1_2_logical" name="stat1_2_logical" class="select">
+			      <option value="and" selected>并含</option>
+			      <option value="or">或含</option>
+			      <option value="not">不含</option>
+		      </select>
+        </td>
+        <td>
+        <select id="stat1_2_sel" name="stat1_2_sel" class="select">
+          <option value="被引频次" selected>期刊文献被引频次</option>
+          <option value="下载频次">期刊文献下载频次</option>
+          <option value="影响因子">期刊影响因子</option>
+          <option value="载文量">载文量</option>          
+        </select> 
+			  <select id="stat1_2_special3"  name="stat1_2_special3" class="select">
+				  <option value="=">等于</option>
+				  <option value=">">大于</option>
+				  <option value="<">小于</option>
+				  <option value=">=" selected>大于等于</option>
+				  <option value="<=">小于等于</option>
+			  </select>	
+			  <input class="textfield6" id="stat1_2_value1" name="stat1_2_value1" onkeypress="KeyPress(this);" type="text"/>	
+       </td>
+      </tr>
+      <tr id="qk_1">
+      <td>&nbsp;</td>
+		  <td>
+        <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('qk','qk_i','qk_c');"/>&nbsp;
+        <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('qk','qk_i','qk_c');"/>
+		  </td>
+		  <td>
+			  <select id="qk_1_sel" name="qk_1_sel" onchange="SearchExt('qk_1','CN,ISSN');" class="select">
+          <option value="C_NAME,曾用刊名" selected>刊名</option>
+          <option value="CN">CN</option>
+          <option value="ISSN">ISSN</option>
+          <option value="主办单位1">主办单位</option>
+        </select> 
+			  <input type="text" id="qk_1_value1" name="qk_1_value1" class="textfield25"/>	
+			  <select id="qk_1_special1" name="qk_1_special1" class="select">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			  </select>
+			  <input type="hidden" value="" id="qk_1_extension" name="qk_1_extension" />
+		  </td>
+		  </tr>
+      <tr style="display:none" id="qk_2">
+      <td>&nbsp;</td>
+		  <td>
+        <select id="qk_2_logical" name="qk_2_logical">
+				<option value="and" selected>并含</option>
+				<option value="or">或含</option>
+				<option value="not">不含</option>
+			</select>
+		  </td>
+		  <td>
+			  <select id="qk_2_sel" name="qk_2_sel" onchange="SearchExt('qk_2','CN,ISSN');" class="select">
+          <option value="C_NAME,曾用刊名" selected>刊名</option>
+          <option value="CN">CN</option>
+          <option value="ISSN">ISSN</option>
+          <option value="主办单位1">主办单位</option>
+        </select> 
+			  <input type="text" id="qk_2_value1" name="qk_2_value1" class="textfield25"/>	
+			  <select id="qk_2_special1" name="qk_2_special1" class="select">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			  </select>
+			  <input type="hidden" value="" id="qk_2_extension" name="qk_2_extension" />
+		  </td>
+		  </tr>
+      <tr>
+       <td></td>
+       <td></td>
+       <td>
+          <input id="db_name" type="hidden" value="CJFDBASEINFO" name="db_name"/>
+		      <input id="stat1_i" type="hidden" value="1" name="stat1_i"/>
+		      <input id="stat1_c" type="hidden" value="2" name="stat1_c"/>
+		      <input id="qk_i" type="hidden" value="1" name="qk_i"/>
+		      <input id="qk_c" type="hidden" value="2" name="qk_c"/>
+		      <input id="orderby" type="hidden" value="影响因子 DESC" name="orderby"/>
+          <input type="button" class="ly" style="float:right;" value="检索期刊" onclick="SubmitForm('','')"/>
+        </td>
+      </tr>
+      </table>
+    ]]>
+  </zone>
+  <!--子区域:会议论文集-->
+  <zone id="srccpfd">
+    <![CDATA[ 
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+    <tr id="stat1_1">
+      <td width="36">&nbsp;</td>
+      <td width="104">
+        <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('stat1','stat1_i','stat1_c');" />&nbsp;
+        <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('stat1','stat1_i','stat1_c');"/>
+      </td>
+      <td width="590">
+  			<select id="stat1_1_sel" name="stat1_1_sel" class="select">
+          <option value="C_NAME,E_NAME" selected>会议论文集</option>
+          <option value="DEPART">会议主办单位</option>
+          <option value="PLACE">举办地</option>
+          <option value="C_MEETING">研究机构</option>
+        </select>
+        <input id="stat1_1_value1" name="stat1_1_value1" class="textfield25"/>
+        <select id="stat1_1_special3" name="stat1_1_special3" class="select">
+			    <option value='%' selected>模糊</option>
+			    <option value='='>精确</option>
+			  </select>
+       </td>
+     </tr>
+     <tr style="display:none" id="stat1_2">
+      <td>&nbsp;</td>
+      <td>
+        <select id="stat1_2_logical" name="stat1_2_logical" class="select">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+		    </select>
+      </td>
+      <td>
+  			<select id="stat1_2_sel" name="stat1_2_sel" class="select">
+          <option value="C_NAME,E_NAME" selected>会议论文集</option>
+          <option value="DEPART">会议主办单位</option>
+          <option value="PLACE">举办地</option>
+          <option value="C_MEETING">研究机构</option>
+        </select>
+        <input id="stat1_2_value1" name="stat1_2_value1" size="30" class="textfield25"/>
+        <select id="stat1_2_special3" name="stat1_2_special3" class="select">
+			    <option value='%' selected>模糊</option>
+			    <option value='='>精确</option>
+			  </select>
+       </td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td>
+        <input id="db_name" type="hidden" value="CPFD_JIINFO" name="db_name"/>       
+		    <input id="stat1_i" type="hidden" value="1" name="stat1_i"/>
+		    <input id="stat1_c" type="hidden" value="4" name="stat1_c"/>
+		    <input id="qk_i" type="hidden" value="1" name=qk_i/>
+		    <input id="qk_c" type="hidden" value="2" name=qk_c/>
+		    <input id="orderby" type="hidden" value="(MEETING_DATE,'Date')" name="orderby"/>
+        <input type="button" class="ly" style="float:right;" value="检索会议论文集" onclick="SubmitForm('','')"/>
+      </td>
+     </tr>
+     </table>
+    ]]>
+  </zone>
+  <!--子区域:会议论文集-->
+  <zone id="srccpfq">
+    <![CDATA[ 
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+    <tr id="stat1_1">
+      <td width="36">&nbsp;</td>
+      <td width="104">
+        <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('stat1','stat1_i','stat1_c');" />&nbsp;
+        <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('stat1','stat1_i','stat1_c');"/>
+      </td>
+      <td width="590">
+  			<select id="stat1_1_sel" name="stat1_1_sel" class="select">
+          <option value="会议中文名称,会议英文名称" selected>会议名称</option>
+          <option value="主办单位">主办单位</option>
+          <option value="举办地址">会议地点</option>
+        </select>
+        <input id="stat1_1_value1" name="stat1_1_value1" class="textfield25"/>
+        <select id="stat1_1_special3" name="stat1_1_special3" class="select">
+			    <option value='%' selected>模糊</option>
+			    <option value='='>精确</option>
+			  </select>
+       </td>
+     </tr>
+     <tr style="display:none" id="stat1_2">
+      <td>&nbsp;</td>
+      <td>
+        <select id="stat1_2_logical" name="stat1_2_logical" class="select">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+		    </select>
+      </td>
+      <td>
+  			<select id="stat1_2_sel" name="stat1_2_sel" class="select">
+          <option value="会议中文名称,会议英文名称" selected>会议名称</option>
+          <option value="主办单位">主办单位</option>
+          <option value="举办地址">会议地点</option>
+        </select>
+        <input id="stat1_2_value1" name="stat1_2_value1" size="30" class="textfield25"/>
+        <select id="stat1_2_special3" name="stat1_2_special3" class="select">
+			    <option value='%' selected>模糊</option>
+			    <option value='='>精确</option>
+			  </select>
+       </td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td>
+        <input id="db_name" type="hidden" value="CNKI_MEETING" name="db_name"/>       
+		    <input id="stat1_i" type="hidden" value="1" name="stat1_i"/>
+		    <input id="stat1_c" type="hidden" value="4" name="stat1_c"/>
+		    <input id="qk_i" type="hidden" value="1" name=qk_i/>
+		    <input id="qk_c" type="hidden" value="2" name=qk_c/>
+		    <input id="orderby" type="hidden" value="开始日期 DESC" name="orderby"/>
+        <input type="button" class="ly" style="float:right;" value="检索会议论文集" onclick="SubmitForm('','')"/>
+      </td>
+     </tr>
+     </table>
+    ]]>
+  </zone>
+  <!--子区域:报纸-->
+  <zone id="srcccnd">
+    <![CDATA[
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+     <tr id="stat1_1">
+      <td width="36">&nbsp;</td>
+      <td width="104">
+        <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('stat1','stat1_i','stat1_c');"/>&nbsp;
+        <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('stat1','stat1_i','stat1_c');"/>
+      </td>
+      <td width="590">
+      <select id="stat1_1_sel" name="stat1_1_sel" class="select">
+       <option value="总下载次数" selected>报纸总下载次数</option>
+       <option value="重要度值">重要度值</option>
+       <option value="载文量">文献篇数</option>
+      </select> 
+       	<select id="stat1_1_special3"  name="stat1_1_special3" class="select">
+				<option value="=">等于</option>
+				<option value=">">大于</option>
+				<option value="<">小于</option>
+				<option value=">=" selected>大于等于</option>
+				<option value="<=">小于等于</option>
+			</select>	
+      <input type="text" id="stat1_1_value1" name="stat1_1_value1" onkeypress="KeyPress(this);" class="textfield4"/></td>
+    </tr>
+    <tr id="stat1_2" style="display:none;">
+      <td>&nbsp;</td>
+      <td>
+        <select id="stat1_2_logical"  name="stat1_2_logical" class="select">
+			    <option value=and selected>并含</option>
+			    <option value=or>或含</option>
+			    <option value=not>不含</option>
+		    </select>      
+      </td>
+      <td>
+      <select id="stat1_2_sel" name="stat1_2_sel" class="select">
+       <option value="总下载次数" selected>报纸总下载次数</option>
+       <option value="重要度值">重要度值</option>
+       <option value="载文量">文献篇数</option>
+      </select> 
+       	<select id="stat1_2_special3"  name="stat1_2_special3" class="select">
+				<option value="=">等于</option>
+				<option value=">">大于</option>
+				<option value="<">小于</option>
+				<option value=">=" selected>大于等于</option>
+				<option value="<=">小于等于</option>
+			</select>	
+      <input class="textfield4" type="text" id="stat1_2_value1" name="stat1_2_value1" onkeypress="KeyPress(this);"/></td>
+    </tr>    
+    <tr id="qk_1">
+      <td>&nbsp;</td>
+      <td>
+        <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('qk','qk_i','qk_c');"/>&nbsp; 
+        <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('qk','qk_i','qk_c');"/>
+      </td>
+      <td>
+			<select id="qk_1_sel" name="qk_1_sel" class="select">
+        <option value="报纸中文名" selected>报纸名称</option>
+        <option value="主管单位">主管单位名称</option>
+      </select>
+      <input class="textfield25" type="text" id="qk_1_value1" name="qk_1_value1"/>
+    	<select class="select" id="qk_1_special1"  name="qk_1_special1">
+		    <option value='%'>模糊</option>
+		    <option value='=' selected>精确</option>
+		  </select>
+     </td>
+    </tr>
+    <tr id="qk_2" style="display:none;">
+      <td>&nbsp;</td>
+      <td>
+        <select id="qk_2_logical" name="qk_2_logical" class="select">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+		    </select>
+      </td>
+      <td>
+		  <select id="qk_2_sel" name="qk_2_sel" class="select">
+        <option value="报纸中文名" selected>报纸名称</option>
+        <option value="主管单位">主管单位名称</option>
+      </select>
+      <input class="textfield25" type="text" id="qk_2_value1" name="qk_2_value1"/>
+  	  <select class="select" id="qk_2_special1"  name="qk_2_special1">
+	      <option value='%'>模糊</option>
+	      <option value='=' selected>精确</option>
+	    </select>
+     </td>
+    </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td>
+        <input id="db_name" type="hidden" value="CCNDBASEINFO" name="db_name"/>
+		    <input id="stat1_i" type="hidden" value="1" name="stat1_i"/>
+		    <input id="stat1_c" type="hidden" value="3" name="stat1_c"/>
+		    <input id="qk_i" type="hidden" value="1" name="qk_i"/>
+		    <input id="qk_c" type="hidden" value="2" name="qk_c"/>
+		    <input id="orderby" type="hidden" value="重要度值" name="orderby"/>
+        <input type="button" class="ly" style="float:right;" value="检索报纸" onclick="SubmitForm('','')"/>
+      </td>
+    </tr>
+    </table>
+    ]]>
+  </zone>
+  <!--子区域:年鉴-->
+  <zone id="srccyfd">
+    <![CDATA[
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+    <tr id="stat1_1">
+      <td>&nbsp;</td>
+      <td>
+        <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('stat1','stat1_i','stat1_c');"/>&nbsp;
+        <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('stat1','stat1_i','stat1_c');"/>
+      </td>
+      <td>
+       <select id="stat1_1_sel" name="stat1_1_sel" class="select">
+        <option value="文献篇数" selected>文献篇数</option>
+       </select> 
+		   <select id="stat1_1_special3"  name="stat1_1_special3" class="select">
+			  <option value="=">等于</option>
+			  <option value=">">大于</option>
+			  <option value="<">小于</option>
+			  <option value=">=" selected>大于等于</option>
+			  <option value="<=">小于等于</option>
+		   </select>
+       <input class="textfield1" id="stat1_1_value1" name="stat1_1_value1" onkeypress="KeyPress(this);" type="text"/>	
+      </td>
+    </tr>
+    <tr id="stat1_2" style="display:none;">
+      <td>&nbsp;</td>
+      <td>
+        <select id="stat1_2_logical"  name="stat1_2_logical" class="select">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+		    </select>
+      </td>
+      <td>
+       <select id="stat1_2_sel" name="stat1_2_sel" class="select">
+        <option value="文献篇数" selected>文献篇数</option>
+       </select> 
+		   <select id="stat1_2_special3"  name="stat1_2_special3" class="select">
+			  <option value="=">等于</option>
+			  <option value=">">大于</option>
+			  <option value="<">小于</option>
+			  <option value=">=" selected>大于等于</option>
+			  <option value="<=">小于等于</option>
+		   </select>
+       <input class="textfield1" id="stat1_2_value1" name="stat1_2_value1" onkeypress="KeyPress(this);" type="text"/>	
+      </td>
+    </tr>
+    <tr id="qk_1">
+      <td width="36">&nbsp;</td>
+      <td width="104">
+        <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('qk','qk_i','qk_c');"/>&nbsp;
+        <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('qk','qk_i','qk_c');"/>
+      </td>
+      <td width="590">
+      <select id="qk_1_sel" name="qk_1_sel" class="select">
+        <option value="年鉴中文名"selected>年鉴名称</option>
+        <option value="主编">主编</option>
+        <option value="主编单位">主编单位</option>
+        <option value="主题词">主题词</option>
+      </select>
+      <input class="textfield25" type="text" id="qk_1_value1" name="qk_1_value1"/>	
+			<select class="select" id="qk_1_special1"  name="qk_1_special1">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			</select>
+			<input type="hidden" value="" id="qk_1_extension" name="qk_1_extension" />
+     </td>
+    </tr>
+    <tr id="qk_2"  style="display:none;">
+      <td width="36">&nbsp;</td>
+      <td width="104">
+        <select id="qk_2_logical"  name="qk_2_logical" class="select">
+				  <option value="and" selected>并含</option>
+				  <option value="or">或含</option>
+				  <option value="not">不含</option>
+			  </select>
+      </td>
+      <td width="590">
+      <select id="qk_2_sel" name="qk_2_sel" class="select">
+        <option value="年鉴中文名"selected>年鉴名称</option>
+        <option value="主编">主编</option>
+        <option value="主编单位">主编单位</option>
+        <option value="主题词">主题词</option>
+      </select>
+      <input class="textfield25" type=text id="qk_2_value1" name="qk_2_value1"/>	
+			<select class="select" id="qk_2_special1"  name="qk_2_special1">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			</select>
+			<input type="hidden" value="" id="qk_2_extension" name="qk_2_extension" />
+     </td>
+    </tr>
+    <tr>
+       <td></td>
+       <td></td>
+       <td>
+        <input id="db_name" type="hidden" value="NJZKJB" name="db_name"/>
+		    <input id="stat1_i" type="hidden" value="1" name="stat1_i"/>
+		    <input id="stat1_c" type="hidden" value="2" name="stat1_c"/>
+		    <input id="qk_i" type="hidden" value="1" name="qk_i"/>
+		    <input id="qk_c" type="hidden" value="2" name="qk_c"/>
+		    <input id="orderby" type="hidden" value="文献篇数" name="orderby"/>
+        <input type="button" class="ly" style="float:right;" value="检索年鉴" onclick="SubmitForm('','')"/>
+      </td>
+    </tr>
+    </table>
+    ]]>
+  </zone>
+  <!--子区域:博士-->
+  <zone id="srccdfd">
+    <![CDATA[
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+      <tr id="stat1_1">
+       <td></td>
+       <td>
+         <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('stat1','stat1_i','stat1_c');"/>&nbsp;
+         <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('stat1','stat1_i','stat1_c');"/>
+       </td>
+       <td>
+         <select id="stat1_1_sel" name="stat1_1_sel" class="select">
+           <option value="总被引次数"selected>学位授予点总被引次数</option>
+           <option value="总下载次数">学位授予点总下载次数</option>
+           <option value="载文量">载文量</option>
+         </select>
+			   <select id="stat1_1_special3" name="stat1_1_special3" class="select">
+				  <option value="=">等于</option>
+				  <option value=">">大于</option>
+				  <option value="<">小于</option>
+				  <option value=">=" selected>大于等于</option>
+				  <option value="<=">小于等于</option>
+			   </select>
+			   <input class="textfield1" type="text" id="stat1_1_value1" name="stat1_1_value1" onkeypress="KeyPress(this);"/>	
+      </td>
+     </tr>
+     <tr id="stat1_2" style="display:none;">
+       <td></td>
+       <td>
+         <select id="stat1_2_logical"  name="stat1_2_logical" class="select">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+			   </select>
+       </td>
+       <td>
+         <select id="stat1_2_sel" name="stat1_2_sel" class="select">
+           <option value="总被引次数"selected>学位授予点总被引次数</option>
+           <option value="总下载次数">学位授予点总下载次数</option>
+           <option value="载文量">载文量</option>
+         </select>
+			   <select id="stat1_2_special3"  name="stat1_2_special3" class="select">
+				  <option value="=">等于</option>
+				  <option value=">">大于</option>
+				  <option value="<">小于</option>
+				  <option value=">=" selected>大于等于</option>
+				  <option value="<=">小于等于</option>
+			   </select>
+			   <input class="textfield1" type="text" id="stat1_2_value1" name="stat1_2_value1" onkeypress="KeyPress(this);" />	
+      </td>
+     </tr>
+     <tr id="qk_1">
+       <td width="36">&nbsp;</td>
+       <td width="104">
+         <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('qk','qk_i','qk_c');"/>&nbsp;
+         <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('qk','qk_i','qk_c');"/>
+       </td>
+       <td width="590">
+        <select id="qk_1_sel" name="qk_1_sel" class="select">
+         <option value="名称"selected>学位授予点名称</option>
+         <option value="地域名" >地域</option>
+        </select>		
+			  <input class="textfield25" type="text" id="qk_1_value1" name="qk_1_value1"/>	  	
+			  <select class="select" id="qk_1_special1"  name="qk_1_special1">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			  </select>			
+      </td>
+     </tr>
+     <tr id="qk_2" style="display:none;">
+       <td>&nbsp;</td>
+       <td>
+         <select id="qk_2_logical"  name="qk_2_logical" class="select">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+		    </select>
+       </td>
+       <td>
+        <select id="qk_2_sel" name="qk_2_sel" class="select">
+         <option value="名称"selected>学位授予点名称</option>
+         <option value="地域名">地域</option>
+        </select>		
+			  <input class="textfield25" type=text id="qk_2_value1" name="qk_2_value1"/>	  	
+			  <select class="select" id="qk_2_special1"  name="qk_2_special1">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			  </select>			
+      </td>
+     </tr>
+     <tr>
+       <td></td>
+       <td></td>
+       <td>
+        <input id="db_name" type="hidden" value="CDFDBASEINFO" name="db_name"/>
+		    <input id="stat1_i" type="hidden" value="1" name="stat1_i"/>
+		    <input id="stat1_c" type="hidden" value="3" name="stat1_c"/>
+		    <input id="qk_i" type="hidden" value="1" name="qk_i"/>
+		    <input id="qk_c" type="hidden" value="2" name="qk_c"/>
+		    <input id="orderby" type="hidden" value="载文量" name="orderby"/>
+        <input type="button" class="ly" style="float:right;" value="检索学位授予点" onclick="SubmitForm('','')"/>
+      </td>
+     </tr>
+     </table>
+    ]]>
+  </zone>
+  <!--子区域:硕士-->
+  <zone id="srccmfd">
+    <![CDATA[
+    <table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw">
+      <tr id="stat1_1">
+       <td></td>
+       <td>
+         <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('stat1','stat1_i','stat1_c');"/>&nbsp;
+         <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('stat1','stat1_i','stat1_c');"/>
+       </td>
+       <td>
+         <select id="stat1_1_sel" name="stat1_1_sel" class="select">
+           <option value="总被引次数"selected>学位授予点总被引次数</option>
+           <option value="总下载次数">学位授予点总下载次数</option>
+           <option value="载文量">载文量</option>
+         </select>
+			   <select id="stat1_1_special3"  name="stat1_1_special3" class="select">
+				  <option value="=">等于</option>
+				  <option value=">">大于</option>
+				  <option value="<">小于</option>
+				  <option value=">=" selected>大于等于</option>
+				  <option value="<=">小于等于</option>
+			   </select>
+			   <input class="textfield1" id="stat1_1_value1" name="stat1_1_value1" onkeypress="KeyPress(this);"  type="text"/>	
+      </td>
+     </tr>
+     <tr id="stat1_2" style="display:none;">
+       <td></td>
+       <td>
+         <select id="stat1_2_logical"  name="stat1_2_logical">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+			   </select>
+       </td>
+       <td>
+         <select id="stat1_2_sel" name="stat1_2_sel" class="select">
+           <option value="总被引次数"selected>学位授予点总被引次数</option>
+           <option value="总下载次数">学位授予点总下载次数</option>
+           <option value="载文量">载文量</option>
+         </select>
+			   <select id="stat1_2_special3"  name="stat1_2_special3" class="select">
+				  <option value="=">等于</option>
+				  <option value=">">大于</option>
+				  <option value="<">小于</option>
+				  <option value=">=" selected>大于等于</option>
+				  <option value="<=">小于等于</option>
+			   </select>
+			   <input class="textfield1" id="stat1_2_value1" name="stat1_2_value1" onkeypress="KeyPress(this);" type="text"/>	
+      </td>
+     </tr>
+     <tr id="qk_1">
+       <td width="36">&nbsp;</td>
+       <td width="104">
+         <img src="Images/blue/bluerighttopbuttonjia.gif" border="0" onclick="AddRow('qk','qk_i','qk_c');"/>&nbsp;
+         <img src="Images/blue/bluerighttopbuttonjian.gif" border="0" onclick="DeleteRow('qk','qk_i','qk_c');"/>
+       </td>
+       <td width="590">
+        <select id="qk_1_sel" name="qk_1_sel" class="select">
+         <option value="名称"selected>学位授予点名称</option>
+         <option value="地域名" >地域</option>
+        </select>		
+			  <input class="textfield25" id="qk_1_value1" name="qk_1_value1"/>	  	
+			  <select class="select" id="qk_1_special1" name="qk_1_special1">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			  </select>			
+      </td>
+     </tr>
+     <tr id="qk_2" style="display:none;">
+       <td>&nbsp;</td>
+       <td>
+         <select id="qk_2_logical" name="qk_2_logical" class="select">
+			    <option value="and" selected>并含</option>
+			    <option value="or">或含</option>
+			    <option value="not">不含</option>
+		    </select>
+       </td>
+       <td>
+        <select id="qk_2_sel" name="qk_2_sel" class="select">
+         <option value="名称"selected>学位授予点名称</option>
+         <option value="地域名">地域</option>
+        </select>		
+			  <input class="textfield25" type="text" id="qk_2_value1" name="qk_2_value1"/>	  	
+			  <select class="select" id="qk_2_special1"  name="qk_2_special1">
+			  <option value="%" selected>模糊</option>
+			  <option value="=">精确</option>
+			  </select>			
+      </td>
+     </tr>
+     <tr>       
+       <td></td>
+       <td></td>
+       <td>
+        <input id="db_name" type="hidden" value="CMFDBASEINFO" name="db_name"/>
+		    <input id="stat1_i" type="hidden" value="1" name="stat1_i"/>
+		    <input id="stat1_c" type="hidden" value="2" name="stat1_c"/>
+		    <input id="qk_i" type="hidden" value="1" name="qk_i"/>
+		    <input id="qk_c" type="hidden" value="2" name="qk_c"/>
+		    <input id="orderby" type="hidden" value="载文量" name="orderby"/>
+        <input type="button" class="ly" style="float:right;" value="检索学位授予点" onclick="SubmitForm('','')"/>
+      </td>
+     </tr>
+     </table>
+    ]]>
+  </zone>
+  <zone id="srcproj">
+    <![CDATA[  
+      <div class="tablerone">
+        	<table width="730" border="0" cellspacing="0" cellpadding="0" class="jsfw3">
+            <tr>
+              <td width="22">&nbsp;</td>
+              <td width="90"><strong>项目名称</strong></td>
+              <td width="618"><input type="text" name="prjname" id="prjname" class="textfield22"/></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><strong>项目研究内容</strong></td>
+              <td><input type="text" name="org1" id="org1" class="textfield22"/></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><strong>项目来源</strong></td>
+              <td>
+                <input type="hidden" id="org2_1_sel" name="org2_1_sel" value="项目性质" />
+                <input type="text" name="org2_1_value1" id="org2_1_value1" class="textfield4"/>
+			          <input type="button" class="ly" value="项目来源列表" onclick="MM_openNewWin('/grid2008/brief/brief_prosource.aspx','中国学术文献网络出版总库','CJFQ','org2_1_value1',3)"/>
+                <select id="org2_1_special1" name="org2_1_special1" class="select">
+                 <option value="%">模糊</option>
+                 <option value="=" selected="selected">精确</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><strong>项目参与人</strong>&nbsp;<br /></td>
+              <td><input type="text" name="manager" id="manager" class="textfield4"/>
+              <input type="hidden" id="org_1_sel" name="org_1_sel" value="承办单位" />
+              <strong><span style="float:left; margin:0 3px; line-height:20px;">项目承担单位</span>
+              <input type="text" name="org_1_value1" id="org_1_value1" class="textfield4"/>                
+              <select id="org_1_special1" name="org_1_special1" class="select">
+                  <option value='%' >模糊</option>
+                  <option value='=' selected='selected'>精确</option>
+              </select>
+              </strong>
+              <input name="input2" type="button" class="xz" value="检 索" onclick="SubmitForm('','')"/>
+              <input id="db_name" type="hidden" value="CNKI_PROJECTS" name="db_name"/>
+              </td>
+            </tr>            
+           </table>
+        </div>
+    ]]>    
+  </zone>
+</DataConfiger>

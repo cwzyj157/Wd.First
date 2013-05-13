@@ -1,0 +1,217 @@
+﻿<div id="source">
+  <input id="orderby" type="hidden" value="文献篇数" name="orderby"></input>
+  <input type="hidden" name ="navicode" id="navicode"/>
+  <input type="hidden" name ="navifield" id="navifield" value="分类代码"/>
+  <input id="db_name" type="hidden" value="CNKI_SCHOLAR" name="db_name"></input>
+  <input id="stat3_i" type="hidden" value="1" name="stat3_i"></input>
+  <input id="stat3_c" type="hidden" value="4" name="stat3_c"></input>
+  <input id="au_i" type="hidden" value="1" name="au_i"></input>
+  <input id="au_c" type="hidden" value="2" name="au_c"></input>
+  <input id="org_i" type="hidden" value="1" name="au_i"></input>
+  <input id="org_c" type="hidden" value="2" name="au_c"></input>
+  <input id="subword_i" type="hidden" value="1" name="au_i"></input>
+  <input id="subword_c" type="hidden" value="2" name="au_c"></input>
+</div>
+
+
+
+<table id="au">
+  <tr id="au_1">
+    <td width="100px"></td>
+    <td>
+      <!--<select id=au_1_sel name=au_1_sel style= class=><option value='学者'selected>学者</option><option value='学者单位'>学者单位</option></select> -->
+      <input type="hidden" value="学者" id="au_1_sel" name="au_1_sel" />
+      <span>学者姓名：</span>
+      <input type="text" id="au_1_value1" name="au_1_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+
+      <select class="font9" id="au_1_special1"  name="au_1_special1" onchange="">
+        <option value='%' >模糊</option>
+        <option value='=' selected>精确</option>
+      </select>
+    </td>
+  </tr>
+  
+</table>
+
+
+
+
+
+<table id="org">
+  <tr id="org_1">
+    <td width="100px" align="center">
+      <a href="javascript:AddRow('org','org_i','org_c');"><img src='/grid2008/images/01.gif' border='0' /></a>　<a href="javascript:DeleteRow('org','org_i','org_c');"><img src='/grid2008/images/02.gif' border='0' /></a>
+    </td>
+    <td>
+      <input type="hidden" value='学者单位' id='org_1_sel' name='org_1_sel' />
+      <span>工作单位：</span>
+      <input type='text' id="org_1_value1" name="org_1_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+
+      <select class="font9" id="org_1_special1"  name="org_1_special1" onchange="">
+        <option value='%' selected>模糊</option>
+        <option value='=' >精确</option>
+      </select>
+    </td>
+  </tr>
+  <tr style="display:none" id="org_2">
+    <td width="100px" >
+      <select id="org_2_logical"  name="org_2_logical">
+        <option value="and" selected="">并含</option>
+        <option value="or">或含</option>
+        <option value="not">不含</option>
+      </select>
+    </td>
+    <td>
+      <input type="hidden" value='学者单位' id='org_2_sel' name='org_2_sel' />
+      <span>工作单位：</span>
+      <input type='text' id="org_2_value1" name="org_2_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+
+      <select class="font9" id="org_2_special1"  name="org_2_special1" onchange="">
+        <option value='%' selected=''>模糊</option>
+        <option value='=' >精确</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<table id="fund">
+  <tr id="fund_2">
+    <td width="100px"></td>
+    <td>
+      <input type='hidden' id='fund_2_sel' name='fund_2_sel' value='研究领域,研究方向,学者知识向量' />
+        <span>研究方向关键词：</span>
+      <input type='text' id="fund_2_value1" name="fund_2_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+      <select class="font9" id="fund_2_special1"  name="fund_2_special1" onchange="">
+        <option value='%' selected=''>模糊</option>
+        <option value='=' >精确</option>
+      </select>
+    </td>
+  </tr>
+  <tr id="fund_1">
+    <td width="100px"></td>
+    <td>
+      <input type="hidden" id="fund_2_logical"  name="fund_1_logical" value="and" />
+      <input type="hidden" id='fund_1_sel' name='fund_1_sel' value='荣获资助' />
+        <span>获资助国家科研基金：</span>
+      
+      <input type='text' id="fund_1_value1" name="fund_1_value1" size="10" maxlength="120" style="border: 1px solid rgb(127, 157, 185); width: 175px;"/>
+      <img style="cursor:hand" align="absmiddle" onclick="Javascript:MM_openSrcWin('/grid2008/brief/brief_navi.aspx','$db_opt','FUND','fund_1_value1')" src="/grid2008/images/languageimages/GB/liulan_jj.gif" />
+      <select class="font9" id="fund_1_special1"  name="fund_1_special1" onchange="">
+        <option value='%' selected=''>模糊</option>
+        <option value='=' >精确</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<table id="stat3">
+
+  <tr id="stat3_1">
+    <td style="width:100px;" align="center"><a href="javascript:AddRow('stat3','stat3_i','stat3_c');"><img src='/grid2008/images/01.gif' border='0' /></a>　<a href="javascript:DeleteRow('stat3','stat3_i','stat3_c');"><img src='/grid2008/images/02.gif' border='0' /></a></td>
+    <td>
+      <select id='stat3_1_sel' name='stat3_1_sel' style='' class=''>
+        <option value='第一学者篇数' selected=''>第一作者篇数</option>
+        <option value='核心期刊论文数'>核心期刊论文数</option>
+        <option value='文献篇数'>文献篇数</option>
+        <option value='被引频次'>学者文献总被引频次</option>
+        <option value='下载频次'>学者文献总下载频次</option>
+        <option value='基金论文数'>基金论文数</option>
+      </select>
+
+      <select id="stat3_1_special3"  name="stat3_1_special3">
+        
+        <option value='>=' selected>大于等于</option>
+        <option value='<='>小于等于</option>
+      </select>
+
+      <input type='text' id="stat3_1_value1" name="stat3_1_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"   style="BORDER-RIGHT:#7F9DB9 1px solid;BORDER-TOP:#7F9DB9 1px solid;BORDER-LEFT:#7F9DB9 1px solid;WIDTH:90px;BORDER-BOTTOM:#7F9DB9 1px solid" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>
+    </td>
+  </tr>
+  <tr style="display:none" id="stat3_2">
+    <td style="width:100px;">
+      <select id="stat3_2_logical"  name="stat3_2_logical">
+        <option value="and" selected="">并含</option>
+        <option value="or">或含</option>
+        <option value="not">不含</option>
+      </select>
+    </td>
+    <td>
+      <select id="stat3_2_sel" name="stat3_2_sel" style="" class="">
+        <option value='第一学者篇数' selected=''>第一作者篇数</option>
+        <option value='核心期刊论文数'>核心期刊论文数</option>
+        <option value='文献篇数'>文献篇数</option>
+        <option value='被引频次'>学者文献总被引频次</option>
+        <option value='下载频次'>学者文献总下载频次</option>
+        <option value='基金论文数'>基金论文数</option>
+      </select>
+
+      <select id="stat3_2_special3"  name="stat3_2_special3">
+        
+        <option value='>=' selected>大于等于</option>
+        <option value='<='>小于等于</option>
+      </select>
+
+      <input type='text' id="stat3_2_value1" name="stat3_2_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>
+    </td>
+  </tr>
+  <tr style="display:none" id="stat3_3">
+    <td nowrap="true" style="width:70px;">
+      <select id="stat3_3_logical"  name="stat3_3_logical">
+        <option value="and" selected="">并含</option>
+        <option value="or">或含</option>
+        <option value="not">不含</option>
+      </select>
+    </td>
+    <td>
+      <select id="stat3_3_sel" name="stat3_3_sel" style="" class="">
+        <option value='第一学者篇数' selected=''>第一作者篇数</option>
+        <option value='核心期刊论文数'>核心期刊论文数</option>
+        <option value='文献篇数'>文献篇数</option>
+        <option value='被引频次'>学者文献总被引频次</option>
+        <option value='下载频次'>学者文献总下载频次</option>
+        <option value='基金论文数'>基金论文数</option>
+      </select>
+
+      <select id="stat3_3_special3"  name="stat3_3_special3">
+        
+        <option value='>=' selected>大于等于</option>
+        <option value='<='>小于等于</option>
+      </select>
+
+      <input type='text' id="stat3_3_value1" name="stat3_3_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>
+    </td>
+  </tr>
+  <tr style="display:none" id="stat3_4">
+    <td nowrap="true" style="width:70px;">
+      <select id="stat3_4_logical"  name="stat3_4_logical">
+        <option value="and" selected="">并含</option>
+        <option value="or">或含</option>
+        <option value="not">不含</option>
+      </select>
+    </td>
+    <td>
+      <select id="stat3_4_sel" name="stat3_4_sel" style="" class="">
+        <option value='第一学者篇数' selected=''>第一作者篇数</option>
+        <option value='核心期刊论文数'>核心期刊论文数</option>
+        <option value='文献篇数'>文献篇数</option>
+        <option value='被引频次'>学者文献总被引频次</option>
+        <option value='下载频次'>学者文献总下载频次</option>
+        <option value='基金论文数'>基金论文数</option>
+      </select>
+
+      <select id="stat3_4_special3"  name="stat3_4_special3">
+        
+        <option value='>=' selected>大于等于</option>
+        <option value='<='>小于等于</option>
+      </select>
+
+      <input type='text' id="stat3_4_value1" name="stat3_4_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>
+    </td>
+  </tr>
+</table>
+
+<div class="anniu_wxx">
+  <!--<span id="divresult" style="display:none">
+      <A class="b18" href="javascript:SubmitUser();">定制到自定义栏目</A>&nbsp;&nbsp;</span>-->
+  <input type="button" class="butt04" value="检索学者" onclick="javascript:SubmitForm('','')">
+</div>

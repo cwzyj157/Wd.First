@@ -1,0 +1,226 @@
+﻿<DataConfiger>
+	<zone id="hidden">
+		<![CDATA[<div id="source">
+		  <input id="db_name" type="hidden" value="CJFDBASEINFO" name="db_name" />
+		  <input id="stat1_i" type="hidden" value="1" name="stat1_i" />
+		  <input id="stat1_c" type="hidden" value="4" name="stat1_c" />
+		  <input id="qk_i" type="hidden" value="1" name="qk_i" />
+		  <input id="qk_c" type="hidden" value="4" name="qk_c" />
+		  <input id="orderby" type="hidden" value="影响因子" name="orderby" />
+		</div>]]>
+	</zone>
+	<zone id="ref">
+		<![CDATA[<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+		  <tr class="dd01" id="stat1_1">
+			<td nowrap="true" style="width:70px;">
+			  <A href="javascript:AddRow('stat1','stat1_i','stat1_c');">
+				<IMG src='/grid2008/images/01.gif' border='0' />
+			  </A>&nbsp;<A href="javascript:DeleteRow('stat1','stat1_i','stat1_c');">
+				<IMG src='/grid2008/images/02.gif' border='0' />
+			  </A>
+			</td>
+			<td>
+			  <select id='stat1_1_sel' name='stat1_1_sel'>
+				<option value='被引频次' selected=''>期刊文献总被引次数</option>
+				<option value='下载频次'>期刊文献总下载次数</option>
+				<option value='影响因子'>期刊影响因子</option>
+				<option value='载文量'>载文量</option>
+			  </select>
+			  <select id="stat1_1_special3"  name="stat1_1_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected=''>大于等于</option>
+				<option value='<='>小于等于</option>
+			  </select>
+			  <input id="stat1_1_value1" name="stat1_1_value1" size="10" maxlength="9" onkeypress="KeyPress(this);"  type="text" style="BORDER-RIGHT:#7F9DB9 1px solid;BORDER-TOP:#7F9DB9 1px solid;BORDER-LEFT:#7F9DB9 1px solid;WIDTH:90px;BORDER-BOTTOM:#7F9DB9 1px solid" />
+			</td>
+		  </tr>
+		  <tr class="dd01" style="display:none" id="stat1_2">
+			<td nowrap="true" style="width:70px;"  align="left">
+			  <select id="stat1_2_logical"  name="stat1_2_logical">
+				<option value="and" selected="">并含</option>
+				<option value="or">或含</option>
+				<option value="not">不含</option>
+			  </select>
+			</td>
+			<td>
+			  <select id="stat1_2_sel" name="stat1_2_sel">
+				<option value='被引频次'>期刊文献总被引次数</option>
+				<option value='下载频次' selected=''>期刊文献总下载次数</option>
+				<option value='影响因子'>期刊影响因子</option>
+				<option value='载文量'>载文量</option>
+			  </select>
+			  <select id="stat1_2_special3"  name="stat1_2_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected=''>大于等于</option>
+				<option value='<='>小于等于</option>
+			  </select>
+			  <input type='text' id="stat1_2_value1" name="stat1_2_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="BORDER-RIGHT:#7F9DB9 1px solid;BORDER-TOP:#7F9DB9 1px solid;BORDER-LEFT:#7F9DB9 1px solid;WIDTH:90px;BORDER-BOTTOM:#7F9DB9 1px solid" />
+			</td>
+		  </tr>
+		  <tr class="dd01" style="display:none" id="stat1_3">
+			<td nowrap="true" style="width:70px;">
+			  <select id="stat1_3_logical"  name="stat1_3_logical">
+				<option value="and" selected="">并含</option>
+				<option value="or">或含</option>
+				<option value="not">不含</option>
+			  </select>
+			</td>
+			<td>
+			  <select id="stat1_3_sel" name="stat1_3_sel">
+				<option value='被引频次'>期刊文献总被引次数</option>
+				<option value='下载频次'>期刊文献总下载次数</option>
+				<option value='影响因子' selected=''>期刊影响因子</option>
+				<option value='载文量'>载文量</option>
+			  </select>
+			  <select id="stat1_3_special3"  name="stat1_3_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected=''>大于等于</option>
+				<option value='<='>小于等于</option>
+			  </select>
+			  <input type='text' id="stat1_3_value1" name="stat1_3_value1" size="10" maxlength="10" onkeypress="KeyPress(this);" style="BORDER-RIGHT:#7F9DB9 1px solid;BORDER-TOP:#7F9DB9 1px solid;BORDER-LEFT:#7F9DB9 1px solid;WIDTH:90px;BORDER-BOTTOM:#7F9DB9 1px solid" />
+			</td>
+		  </tr>
+		  <tr class="dd01" style="display:none" id="stat1_4">
+			<td nowrap="true" style="width:70px;">
+			  <select id="stat1_4_logical"  name="stat1_4_logical">
+				<option value="and" selected="">并含</option>
+				<option value="or">或含</option>
+				<option value="not">不含</option>
+			  </select>
+			</td>
+			<td>
+			  <select id="stat1_4_sel" name="stat1_4_sel">
+				<option value='被引频次'>期刊文献总被引次数</option>
+				<option value='下载频次'>期刊文献总下载次数</option>
+				<option value='影响因子'>期刊影响因子</option>
+				<option value='载文量' selected=''>载文量</option>
+			  </select>
+
+			  <select id="stat1_4_special3"  name="stat1_4_special3">
+				<option value='='>等于</option>
+				<option value='>'>大于</option>
+				<option value='<'>小于</option>
+				<option value='>=' selected=''>大于等于</option>
+				<option value='<='>小于等于</option>
+			  </select>
+			  <input type='text' id="stat1_4_value1" name="stat1_4_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  style="BORDER-RIGHT:#7F9DB9 1px solid;BORDER-TOP:#7F9DB9 1px solid;BORDER-LEFT:#7F9DB9 1px solid;WIDTH:90px;BORDER-BOTTOM:#7F9DB9 1px solid" />
+			</td>
+		  </tr>
+		</table>]]>
+	</zone>
+	<zone id="txt">
+		<![CDATA[<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+		  <tr class="dd01" id="qk_1">
+			<td nowrap="true" style="width:70px;">
+			  <A href="javascript:AddRow('qk','qk_i','qk_c');">
+				<IMG src='/grid2008/images/01.gif' border='0' />
+			  </A>&nbsp;<A href="javascript:DeleteRow('qk','qk_i','qk_c');">
+				<IMG src='/grid2008/images/02.gif' border='0' />
+			  </A>
+			</td>
+			<td>
+			  <select id='qk_1_sel' name='qk_1_sel'>
+				<option value='C_NAME' selected=''>刊名</option>
+				<option value='CN'>CN</option>
+				<option value='ISSN'>ISSN</option>
+				<option value='主办单位1'>主办单位</option>
+			  </select>
+			  <input type='text' id="qk_1_value1" name="qk_1_value1" size="10" maxlength="50" />
+			  <select class="font9" id="qk_1_special1"  name="qk_1_special1">
+				<option value='%' selected=''>模糊</option>
+				<option value='='>精确</option>
+			  </select>
+			  <input type="hidden" value="" id="qk_1_extension" name="qk_2_extension" />
+			</td>
+		  </tr>
+		  <tr class="dd01" style="display:none" id="qk_2">
+			<td nowrap="true" style="width:70px;"  align="left">
+			  <select id="qk_2_logical"  name="qk_2_logical">
+				<option value="and" selected="">并含</option>
+				<option value="or">或含</option>
+				<option value="not">不含</option>
+			  </select>
+			</td>
+			<td>
+			  <select id="qk_2_sel" name="qk_2_sel">
+				<option value='C_NAME'>刊名</option>
+				<option value='CN' selected=''>CN</option>
+				<option value='ISSN'>ISSN</option>
+				<option value='主办单位1'>主办单位</option>
+			  </select>
+			  <input type='text' id="qk_2_value1" name="qk_2_value1" size="10" maxlength="50" />
+			  <select class="font9" id="qk_2_special1"  name="qk_2_special1">
+				<option value='%'>模糊</option>
+				<option value='=' selected=''>精确</option>
+			  </select>
+			  <input type="hidden" value="?" id="qk_2_extension" name="qk_2_extension" />
+			</td>
+		  </tr>
+		  <tr class="dd01" style="display:none" id="qk_3">
+			<td nowrap="true" style="width:70px;"  align="left">
+			  <select id="qk_3_logical"  name="qk_3_logical">
+				<option value="and" selected="">并含</option>
+				<option value="or">或含</option>
+				<option value="not">不含</option>
+			  </select>
+			</td>
+			<td>
+			  <select id="qk_3_sel" name="qk_3_sel" style="" class="">
+				<option value='C_NAME'>刊名</option>
+				<option value='CN'>CN</option>
+				<option value='ISSN' selected=''>ISSN</option>
+				<option value='主办单位1'>主办单位</option>
+			  </select>
+			  <input type='text' id="qk_3_value1" name="qk_3_value1" size="10" maxlength="50"  />
+			  <select class="font9" id="qk_3_special1"  name="qk_3_special1" onchange="">
+				<option value='%'>模糊</option>
+				<option value='=' selected=''>精确</option>
+			  </select>
+			  <input type="hidden" value="?" id="qk_3_extension" name="qk_3_extension" />
+			</td>
+			</tr>
+			<tr class="dd01" style="display:none" id="qk_4">
+			  <td nowrap="true" style="width:70px;"  align="left">
+				<select id="qk_4_logical"  name="qk_4_logical">
+				  <option value="and" selected="">并含</option>
+				  <option value="or">或含</option>
+				  <option value="not">不含</option>
+				</select>
+			  </td>
+			  <td>
+				<select id="qk_4_sel" name="qk_4_sel">
+				  <option value='C_NAME'>刊名</option>
+				  <option value='CN'>CN</option>
+				  <option value='ISSN'>ISSN</option>
+				  <option value='主办单位1' selected=''>主办单位</option>
+				</select>
+				<input type='text' id="qk_4_value1" name="qk_4_value1" size="10" maxlength="50"  />
+				<select class="font9" id="qk_4_special1"  name="qk_4_special1">
+				  <option value='%'>模糊</option>
+				  <option value='=' selected=''>精确</option>
+				</select>
+				<input type="hidden" value="?" id="qk_4_extension" name="qk_4_extension" />
+			  </td>
+			</tr>
+		  </table>]]>
+	</zone>
+	<zone id="sub">
+		<![CDATA[<div class="anniu_wx">
+		  <input type="button" class="butt04" value="检索期刊" onclick="SubmitForm('','')" />
+		</div>]]>
+	</zone>
+</DataConfiger>
+
+
+
+
+
+
+
+

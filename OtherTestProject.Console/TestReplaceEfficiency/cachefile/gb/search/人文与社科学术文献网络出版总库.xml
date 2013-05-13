@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataConfiger>
+  <zone id="src">
+    <![CDATA[
+			<div class="rightseachlist" id="divsrc">
+				<font color="black"><span id="srctitle">文献出版来源</span>：</font>
+        <input type="hidden" id="src_1_sel" name="src_1_sel" value="文献来源">
+				<input class="gray input_border" name="src_1_value1" type="text" value=""  style="WIDTH: 254px; " ID="src_1_value1" onFocus="if(KeywordVal(this.value)==false) this.value='';this.style.color='#000000'" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')">
+        <input type="button" value="文献来源列表" class="Newbtn" onclick="Javascript:MM_openSrcWin('/grid2008/brief/result_src.aspx','$db_opt','CJFQS','src_1_value1',3)"/>
+        <select class="font9" id="src_1_special1" name="src_1_special1" >
+								<option value='%' >模糊</option>
+								<option value='=' selected>精确</option>
+				</select>
+			</div>  
+		]]>
+  </zone>
+  <!--子区域:文献提交-->
+  <zone id="sub">
+    <![CDATA[
+			<input id="au_i" type="hidden" value="1" name="au_i" /> 
+			<input id="au_c" type="hidden" value="4" name="au_c" />
+			<div class="anniu_wxx">
+					<span id="divresult" style="display:none"><input type="button" name="Submit3" value="在结果中检索"  class="butt06" onclick="javascript:SubmitForm('res','')">&nbsp;&nbsp;</span><input type="button" class="butt04" value="检索文献" ID="Button5" NAME="Button5" onclick="javascript:SubmitForm('','');">&nbsp;&nbsp;<input type="checkbox" onclick="DeleteFreq(this)" value="xls" id="txt_extension" checked name="txt_extension"/>中英文扩展检索
+			</div>
+		]]>
+  </zone>
+
+  <!--子区域:文献提交_在结果中检索-->
+  <zone id="sub_res">
+    <![CDATA[
+			<input id="au_i" type="hidden" value="1" name="au_i" /> 
+			<input id="au_c" type="hidden" value="3" name="au_c" />
+			<div style="text-align:right;padding-right:100px;padding-top:5px;">
+					<input type="button" name="Submit3" value="在结果中检索"  class="butt06" style="cursor:pointer" onclick="javascript:SubmitForm('res','')">&nbsp;&nbsp;<input type="button" name="Submit" value="检索文献"  class="butt04" style="cursor:pointer" onclick="javascript:SubmitForm('','')">&nbsp;&nbsp;<input type="checkbox" onclick="DeleteFreq(this)" value="xls"  id="txt_extension" name="txt_extension"/>中英文扩展检索
+
+			</div>
+		]]>
+  </zone>
+</DataConfiger>

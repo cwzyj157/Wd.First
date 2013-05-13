@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<input id="db_name" type="hidden" value="CNKI_PROJECTS" name="db_name">
+  <table width="828" height="0" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#4b66bf">
+    <tr>
+      <td bgcolor="#f2f2f2">
+        <table width="800" border="0" cellspacing="0" cellpadding="2">
+          <tr>
+            <td width="142" rowspan="4" class="red_blod">科研项目检索</td>
+            <td colspan="2">
+              项目名称:
+              <input type="text" style="width:412px" name="prjname" id="prjname" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              所属学科:
+              <input name="naviname" type="text" value="全部学科" disabled="" style="width:410px" ID="naviname">
+                <input type="hidden" name ="navicode" id="navicode"/>
+                <input type="hidden" name ="navifield" id="navifield" value="涉及学科代码" />
+                <img src="/grid2008/images/liulan.gif" width="23" height="20" align="absmiddle" style="cursor:hand" onClick="MM_openNavi2Win('/grid2008/popup/NaviList.aspx','中国学术文献网络出版总库','Form1.naviname')">
+            </td>
+          </tr>
+          <tr>
+            <td width="30%">
+              承办单位:
+              <input type="text" name="org" id="org" />
+            </td>
+            <td>
+              负责人:
+              <input type="text" style="width:150px" name="manager" id="manager" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <select  ID="publishdate_sel" NAME="publishdate_sel">
+                <option value='指南发布时间' selected=''>发布时间</option>
+                <option value='申请截止时间'>截止时间</option>
+                <option value='立项时间'>立项时间</option>
+                <option value='完成时间段'>完成时间</option>
+              </select>
+              <span style="FONT-family:宋体;FONT-SIZE:9pt;COLOR:#000000;TEXT-DECORATION:none;">
+                <SCRIPT language="javascript" src="/grid2008/Script/PopupCalendar.js"></SCRIPT>
+              </span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span id="publishdate" style="">
+                <font color="black">从</font>
+                <input class="font9" id="publishdate_from" name="publishdate_from" size="20" maxlength="20"
+				value='' onClick="getDateString(this, oCalendarChs)" type="text" style="WIDTH:80px;">
+                  <font color="black">到</font>
+                  <input class="font9" id="publishdate_to" name="publishdate_to" size="20" maxlength="20"
+				value='' onClick="getDateString(this, oCalendarChs)" type="text" style="WIDTH:80px;">
+                  </span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="button" class="butt04" value="检索" onclick="javascript:SubmitForm('','')">
+		</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+

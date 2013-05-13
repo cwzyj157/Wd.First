@@ -1,0 +1,158 @@
+﻿<div id="source">
+  <input id="db_name" type="hidden" value="CCNDBASEINFO" name="db_name"></input>
+  <input id="stat1_i" type="hidden" value="1" name="stat1_i"></input>
+  <input id="stat1_c" type="hidden" value="3" name="stat1_c"></input>
+  <input id="qk_i" type="hidden" value="1" name="qk_i"></input>
+  <input id="qk_c" type="hidden" value="2" name="qk_c"></input>
+  <input id="orderby" type="hidden" value="重要度值" name="orderby"></input>
+</div>
+
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="5" colspan="2" ></td>
+  </tr>
+  <tr class="dd01" id="stat1_1">
+    <td nowrap="true" style="width:70px;">
+      <A href="javascript:AddRow('stat1','stat1_i','stat1_c');">
+        <IMG src='/grid2008/images/01.gif' border='0'>
+      </A>&nbsp;<A href="javascript:DeleteRow('stat1','stat1_i','stat1_c');">
+        <IMG src='/grid2008/images/02.gif' border='0'>
+      </A>
+    </td>
+    <td>
+      <select id='stat1_1_sel' name='stat1_1_sel' style='' class=''>
+        <option value='总下载次数' selected=''>报纸总下载次数</option>
+        <option value='重要度值'>重要度值</option>
+        <option value='载文量'>文献篇数</option>
+      </select>
+
+      <select id="stat1_1_special3"  name="stat1_1_special3">
+        <option value='='>等于</option>
+        <option value='>'>大于</option>
+        <option value=''
+          <'>小于
+        </option>
+        <option value='>=' selected=''>大于等于</option>
+        <option value=''
+          <='>小于等于
+        </option>
+      </select>
+
+      <input type='text' id="stat1_1_value1" name="stat1_1_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;" />
+    </td>
+  </tr>
+
+  <tr class="dd01" style="display:none" id="stat1_2">
+    <td nowrap="true" style="width:70px;">
+
+      <select id="stat1_2_logical"  name="stat1_2_logical">
+        <option value="and" selected="">并且</option>
+        <option value="or">或者</option>
+        <option value="not">不包含</option>
+      </select>
+    </td>
+    <td>
+      <select id="stat1_2_sel" name="stat1_2_sel" style="" class="">
+        <option value='总下载次数' >报纸总下载次数</option>
+        <option value='重要度值' selected=''>重要度值</option>
+        <option value='载文量'>文献篇数</option>
+      </select>
+
+      <select id="stat1_2_special3"  name="stat1_2_special3">
+        <option value='='>等于</option>
+        <option value='>'>大于</option>
+        <option value=''
+          <'>小于
+        </option>
+        <option value='>=' selected=''>大于等于</option>
+        <option value=''
+          <='>小于等于
+        </option>
+      </select>
+
+      <input type='text' id="stat1_2_value1" name="stat1_2_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>
+    </td>
+  </tr>
+
+  <tr class="dd01" style="display:none" id="stat1_3">
+    <td nowrap="true" style="width:70px;">
+      <select id="stat1_3_logical"  name="stat1_3_logical">
+        <option value="and" selected="">并且</option>
+        <option value="or">或者</option>
+        <option value="not">不包含</option>
+      </select>
+    </td>
+    <td>
+      <select id="stat1_3_sel" name="stat1_3_sel" style="" class="">
+        <option value='总下载次数' selected=''>报纸总下载次数</option>
+        <option value='重要度值'>重要度值</option>
+        <option value='载文量' selected=''>文献篇数</option>
+      </select>
+
+      <select id="stat1_3_special3"  name="stat1_3_special3">
+        <option value='='>等于</option>
+        <option value='>'>大于</option>
+        <option value=''
+          <'>小于
+        </option>
+        <option value='>=' selected=''>大于等于</option>
+        <option value=''
+          <='>小于等于
+        </option>
+      </select>
+
+      <input type='text' id="stat1_3_value1" name="stat1_3_value1" size="10" maxlength="10" onkeypress="KeyPress(this);"  type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;ime-mode:disabled;"/>
+    </td>
+  </tr>
+</table>
+
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr class="dd01" id="qk_1">
+    <td nowrap="true" style="width:70px;">
+      <A href="javascript:AddRow('qk','qk_i','qk_c');">
+        <IMG src='/grid2008/images/01.gif' border='0'>
+      </A>&nbsp;<A href="javascript:DeleteRow('qk','qk_i','qk_c');">
+        <IMG src='/grid2008/images/02.gif' border='0'>
+      </A>
+    </td>
+    <td>
+      <select id='qk_1_sel' name='qk_1_sel' style='' class=''>
+        <option value='报纸中文名'selected=''>报纸名称</option>
+        <option value='主管单位'>主管单位名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+      </select>
+      <input type='text' id="qk_1_value1" name="qk_1_value1" size="10" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;" />
+
+      <select class="font9" id="qk_1_special1"  name="qk_1_special1" onchange="">
+        <option value='%' selected=''>模糊</option>
+        <option value='='>精确</option>
+      </select>
+    </td>
+  </tr>
+
+  <tr class="dd01" style="display:none" id="qk_2">
+    <td nowrap="true" style="width:70px;">
+      <select id="qk_2_logical"  name="qk_2_logical">
+        <option value="and" selected="">并且</option>
+        <option value="or">或者</option>
+        <option value="not">不包含</option>
+      </select>
+    </td>
+    <td>
+      <select id="qk_2_sel" name="qk_2_sel" style="" class="">
+        <option value='报纸中文名'>报纸名称</option>
+        <option value='主管单位' selected=''>主管单位名称&nbsp;&nbsp;&nbsp;&nbsp;</option>
+      </select>
+
+      <input type='text' id="qk_2_value1" name="qk_2_value1" maxlength="100" style="border: 1px solid rgb(127, 157, 185); width: 170px;"/>
+      <select class="font9" id="qk_2_special1"  name="qk_2_special1" onchange="">
+        <option value='%'>模糊</option>
+        <option value='=' selected=''>精确</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<div class="anniu_wxx" style="margin-right:50px">
+  <!--<span id="divresult" style="display:none"><A class="b18" href="javascript:SubmitUser();">定制到自定义栏目</A>&nbsp;&nbsp;</span>-->
+  <input type="button" class="butt04" style="cursor:hand;" value="检索报纸" onclick="javascript:SubmitForm('','')">
+</div>

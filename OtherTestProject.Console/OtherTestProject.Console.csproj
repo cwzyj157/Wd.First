@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1A1862E-7092-4759-9ADC-DA66C6C4EBE5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OtherTestProject.Console</RootNamespace>
+    <AssemblyName>OtherTestProject.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cnki.NetworkDisk.Client">
+      <HintPath>include\Cnki.NetworkDisk.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NChardet">
+      <HintPath>..\..\..\..\Samples\C#\NChardet\net2.0\NChardet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Wd.Common">
+      <HintPath>..\Include\Wd.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Wd.Extensions">
+      <HintPath>..\Include\Wd.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionExceptionTest.cs" />
+    <Compile Include="BatchImport\SqlBatchImport.cs" />
+    <Compile Include="Common\CodeTimer.cs" />
+    <Compile Include="CustomAttribute\Class1.cs" />
+    <Compile Include="EventSample\Event\IScriptBase.cs" />
+    <Compile Include="EventSample\Event\OtherScriptDetection.cs" />
+    <Compile Include="EventSample\Event\ScriptBase.cs" />
+    <Compile Include="EventSample\Event\SqlScriptDetection.cs" />
+    <Compile Include="EventSample\Event\WebScriptDetection.cs" />
+    <Compile Include="EventSample\NewFolder1\EventArgExtensions.cs" />
+    <Compile Include="EventSample\NewFolder1\MailManager.cs" />
+    <Compile Include="EventSample\NewFolder1\Pager.cs" />
+    <Compile Include="ExtensionTest.cs" />
+    <Compile Include="IDbHelper.cs" />
+    <Compile Include="ImproveCodeSeries\GC\DisposeTest.cs" />
+    <Compile Include="ImproveCodeSeries\GC\FileDisposeTest.cs" />
+    <Compile Include="ImproveCodeSeries\GC\NullVaribleTest.cs" />
+    <Compile Include="ImproveCodeSeries\GC\ObserveGc.cs" />
+    <Compile Include="ImproveCodeSeries\Thread\ComputeBoundAsyncInvoke.cs" />
+    <Compile Include="MultiThreadTest.cs" />
+    <Compile Include="NameValueCollection.cs" />
+    <Compile Include="PageVariable\PageParamOutput.cs" />
+    <Compile Include="PasswordGenerate.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionSample\Enums.cs" />
+    <Compile Include="ReflectionSample\ReflectionTest.cs" />
+    <Compile Include="Regedit.cs" />
+    <Compile Include="EventSample\NewFolder1\Fax.cs" />
+    <Compile Include="RssPaper\IRssChannelItem.cs" />
+    <Compile Include="RssPaper\RssChannelHelper.cs" />
+    <Compile Include="RssPaper\RssChannelItemResolve.cs" />
+    <Compile Include="RssPaper\SqlRssChannelItem.cs" />
+    <Compile Include="RssPaper\SysCacheManager.cs" />
+    <Compile Include="SingleTon\Singleton.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SqlRemoveRepeat.cs" />
+    <Compile Include="Stream\StreamEffective.cs" />
+    <Compile Include="Stream\StreamTest.cs" />
+    <Compile Include="TestReplaceEfficiency\ReplaceEfficiency.cs" />
+    <Compile Include="TestReplaceEfficiency\ScdbSame.cs" />
+    <Compile Include="ThreadPoolApp.cs" />
+    <Compile Include="ThreadPoolInfo.cs" />
+    <Compile Include="UnsafeTest.cs" />
+    <Compile Include="WebRequestEncoding\HttpWebRequestTest.cs" />
+    <Compile Include="WebRequestEncoding\WebRequestEncoding.cs" />
+    <Compile Include="XmlStringDeal.cs" />
+    <Compile Include="XmlTest\Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RssPaper\XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\ACAD3COMP.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\ACADCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\ACADCOMP2.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CABSCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CABZCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CACJCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CACNCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CAHYCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CALLPAPERCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CAQKCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CBFD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CBFDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CCND.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CCNDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CCNDSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CDFDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CDMD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CDMDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CDMDSUBCMOP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CDMDSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CDMHCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CHKJCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CHKNCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CHKPCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDCOMPMIRROR.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDCOMP_MIRROR.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDFILE.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDSCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDSUBCOMP_MIRROR.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFDZCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFQ.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFRCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFRSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFTCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFTSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFUCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFUSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFVCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFVSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFXCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFXSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFYCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFYSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFZCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CJFZSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CMFDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CMFDSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CNKI_HOTSPOT.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CNKI_SUBJECTWORDS.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CNKI_SUBJECTWORDS_MIRROR.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CPFD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CPFD2COMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CPFD2SUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CPFDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CPFDSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CRFDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CRFDSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CRLD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CSYD2COMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CSYDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CYFD2COMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CYFDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\CYFDSUBCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\DEFILE.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\FGJGCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\FGRWCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\FUNDCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\FVQK.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\FVQKCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\GCYSCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\HOTSPOT.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\HOTSPOTCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\INSTCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\JG_SCDB.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\MEETCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\Org.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\Org1.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\orgLiterature.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\PROJ.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\PROJ1.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\PROJ1COMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\PROJCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\PROSOURCECOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB2.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB3.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB4.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDBCCND.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDBCDMD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDBCFJD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDBCJFD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDBCPFD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDBCYFD.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB_CFED.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB_JIGOU.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB_MIRROR.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB_Order.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCDB_Personal.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCHOAUTHORCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCHOCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\SCHOORGCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\Scienology.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\ScienologyCOMP.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国中小学教育高中知识资源总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国党建文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国党建文献总库备份.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国农业知识仓库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国医院知识仓库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国医院知识仓库（TEST）.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库会议库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库博硕库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库图像库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库成果库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库报纸库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库政法库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城市规划知识仓库期刊库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国城建知识仓库%28CUAD%29.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国基础教育优秀博硕士学位论文全文数据库.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国基础教育知识仓库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国基础教育重要会议论文全文数据库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国学术文献网络出版总库.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国学术文献网络出版总库_Mirror.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库会议库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库博硕库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库图像库.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库成果库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库报纸库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库政法库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国建筑知识仓库期刊库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国政报公报文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国政报公报文献总库备份.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国标准系列数据库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国法律法规文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国法律知识资源总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国法律知识资源总库案例库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国法律知识资源总库法律法规库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国法律知识资源总库论文库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国煤炭知识仓库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国精品文化文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国精品文化文献总库备份.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国精品文艺作品总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国精品文艺作品总库备份.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国精品科普文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国精品科普文献总库备份.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国经济信息文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国经济信息文献总库备份.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国金融知识仓库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国高等教育文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\中国高等教育文献总库备份.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\人文与社科学术文献网络出版总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\全国文化信息资源共享工程视频资源库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\初中教与学指导.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\国际学术文献总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\小学教与学指导.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\知识元数据库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\社会科学网络出版总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\科技学术文献网络出版总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\综合型文献数据库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\自然科学网络出版总库.xml" />
+    <Content Include="TestReplaceEfficiency\cachefile\gb\search\高中教与学指导.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSXML2">
+      <Guid>{F5078F18-C551-11D3-89B9-0000F81FE221}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

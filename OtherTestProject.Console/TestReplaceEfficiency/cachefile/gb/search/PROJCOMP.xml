@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<input id="db_name" type="hidden" value="CNKI_PROJECTS" name="db_name"> 
+<table width="765" height="0" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#4b66bf">
+  <tr>
+    <td bgcolor="#f2f2f2"><table width="700" border="0" cellspacing="0" cellpadding="2">
+      <tr>
+        <td width="5" rowspan="5" class="red_blod"></td>
+        <td colspan="2">
+          项目名称:　　<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 432px;" name="prjname" id="prjname" /></td>
+        </tr>
+        <!--
+      <tr>
+        <td colspan="2">所属学科:
+		<input name="naviname" type="text" value="全部学科" disabled style="width:410px" ID="naviname">
+		<input type="hidden" name ="navicode" id="navicode"/>
+		<input type="hidden" name ="navifield" id="navifield" value="涉及学科代码" />
+		<img src="/grid2008/images/liulan.gif" width="23" height="20" align="absmiddle" style="cursor:hand" onClick="MM_openNavi2Win('/grid2008/popup/NaviList.aspx','中国学术文献网络出版总库','Form1.naviname')"></td>
+      </tr>
+      -->
+      <tr>
+        <td colspan="2">
+          项目研究内容:<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 332px;" name="org1" id="org1" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="hidden" id="org2_1_sel" name="org2_1_sel" value="项目性质" />
+          项目来源:　　<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 332px;" name="org2_1_value1" id="org2_1_value1" />
+          <img align="absmiddle" onclick="Javascript:MM_openNewWin('/grid2008/brief/brief_prosource.aspx','$db_opt','CJFQ','org2_1_value1',3)" src="/grid2008/images/languageimages/GB/liulan_xm.gif" style="cursor:pointer"></img>
+          <select class="font9" id="org2_1_special1" name="org2_1_special1" >
+            <option value='%' >模糊</option>
+            <option value='=' selected>精确</option>
+          </select>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          项目参与人:　<input type="text" style="border: 1px solid rgb(127, 157, 185); width: 150px;" name="manager" id="manager" />
+        </td>
+        <td >
+          项目承担单位:
+          <input type="hidden" id="org_1_sel" name="org_1_sel" value="承办单位" />
+          <input type="text" style="border: 1px solid rgb(127, 157, 185); width: 200px;" name="org_1_value1" id="org_1_value1" />
+          <select class="font9" id="org_1_special1" name="org_1_special1" >
+            <option value='%' >模糊</option>
+            <option value='=' selected=''>精确</option>
+          </select>
+        </td>
+      </tr>
+        
+        <tr>
+		<td colspan=2>
+		<select  ID="publishdate_sel" NAME="publishdate_sel" style="border: 1px solid rgb(127, 157, 185); width: 100px;">
+		<option value='指南发布时间' >指南发布时间</option>
+		<option value='申请截止时间'>申请截止时间</option>
+		<option value='立项时间'>立项时间</option>
+		<option value='完成时间段' selected>完成时间</option>
+		</select>
+    	<span style="FONT-family:宋体;FONT-SIZE:9pt;COLOR:#000000;TEXT-DECORATION:none;">
+		<SCRIPT language="javascript" src="/grid2008/Script/PopupCalendar.js"></SCRIPT>
+		</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="publishdate" style=""><font color="black">从</font><input class="font9 input_border gray" id="publishdate_from" name="publishdate_from" size="20" maxlength="20"
+				value='' onClick="getDateString(this, oCalendarChs)" type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;">
+			<font color="black">到</font><input class="font9 input_border gray" id="publishdate_to" name="publishdate_to" size="20" maxlength="20"
+				value='' onClick="getDateString(this, oCalendarChs)" type="text" style="border: 1px solid rgb(127, 157, 185); width: 90px;">
+		</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" class="butt04" value="检索" onclick="javascript:SubmitForm('','')" />
+		</td>
+      </tr>
+            
+    </table>
+   
+    </td>
+    
+  </tr>
+</table>
+  <div style="display:none">
+    <input type="hidden" id="org3_1_sel" name="org3_1_sel" value="是否本年新增项目" />
+    <input type="hidden" id="org3_1_value1" name="org3_1_value1" value="" />
+    <input type="hidden" id="org3_1_special1" name="org3_1_special1" value="=" />
+    <span id="publishdate1" style="">
+      <font color="black">从</font>
+      <input class="font9 input_border gray" id="publishdate1_from" name="publishdate1_from" size="20" maxlength="20" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" value='' onClick="getDateString(this, oCalendarChs)" type="text" style="WIDTH:100px;">
+        <font color="black">到</font>
+        <input class="font9 input_border gray" id="publishdate1_to" name="publishdate1_to" size="20" maxlength="20" onkeypress="SignVal(this,'sign')" onpaste="return SignVal(this,'value')" value='' onClick="getDateString(this, oCalendarChs)" type="text" style="WIDTH:100px;">
+				
+    </span>
+  </div>
+  
+
+
