@@ -55,7 +55,6 @@ namespace OtherTestProject.Console
 
         static void Main(string[] args)
         {
-
             new B();
 
             //new WebResponseEncoding().GetEncoding("http://2010.163.com/special/00863I1M/rss_2010.xml");

@@ -19,12 +19,12 @@ namespace Wd.Algorithm.Test
             string search = "BBC ABCDAB ABCDABCDABDE";
             string word = "ABCDAB";
             KMP kmp = new KMP(search, word);
-            //int index = kmp.Match();
+            int index = kmp.Match();
             IEnumerable<int> lstIndex = kmp.Matches();
 
-            //Console.WriteLine("search:" + search + "\tword:" + word);
-            //Console.WriteLine("match index:" + index);
-            //Console.WriteLine("Is Right:" + (index != -1 && search.Substring(index, word.Length) == word ? "Y" : "N"));
+            Console.WriteLine("search:" + search + "\tword:" + word);
+            Console.WriteLine("match index:" + index);
+            Console.WriteLine("Is Right:" + (index != -1 && search.Substring(index, word.Length) == word ? "Y" : "N"));
 
 
             foreach (var tmpIndex in lstIndex)
