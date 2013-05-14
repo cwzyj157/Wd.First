@@ -8,8 +8,8 @@
     <ProjectGuid>{7EFFF5F3-68C9-4197-BBB3-D4EB1F25E078}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wd.SortAlgorithm.Test</RootNamespace>
-    <AssemblyName>Wd.SortAlgorithm.Test</AssemblyName>
+    <RootNamespace>Wd.Algorithm.Test</RootNamespace>
+    <AssemblyName>Wd.Algorithm.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -42,19 +42,23 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Wd.Algorithm">
+      <HintPath>..\Include\Wd.Algorithm.dll</HintPath>
+    </Reference>
     <Reference Include="Wd.Extensions">
       <HintPath>..\Include\Wd.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Wd.SortAlgorithm">
-      <HintPath>..\Include\Wd.SortAlgorithm.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringMatch\KMP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sort\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

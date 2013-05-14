@@ -3,19 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Wd.Extensions;
+using Wd.Algorithm;
 
-namespace Wd.SortAlgorithm.Test
+namespace Wd.Algorithm.Test
 {
     /// <summary>
     /// 参考：http://www.cnblogs.com/wangfupeng1988/archive/2011/12/26/2302216.html
     /// </summary>
-    public class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
             //QuickSortTest();
             //SelectionSortTest();
-            InsertionSortTest();
+            //InsertionSortTest();
+
+            // stringmatch test
+            KMP_Test();
         }
         static void QuickSortTest()
         {

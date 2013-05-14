@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Wd.SortAlgorithm
+namespace Wd.Algorithm
 {
     /// <summary>
     /// 选择排序是一种简单直观的排序算法，它的工作原理如下：首先在未排序序列中找到最小（最大）无素，
