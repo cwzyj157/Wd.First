@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Wd.Extensions
+namespace Wd.Extensions.DictionaryExtensions
 {
-    public static class DictionaryExtension
+    public static class DictionaryExtensions
     {
         /// <summary>
         /// 尝试将键和值添加到字典中：如果不存在，才添加；存在，不添加也不抛导常

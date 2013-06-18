@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace Wd.Extensions
+namespace Wd.Extensions.ByteExtenstions
 {
-    public static class ByteExtenstion
+    public static class ByteExtenstions
     {
         /// <summary>
         /// 将字节转换为十六进制格式

@@ -6,11 +6,11 @@ using Wd.Common;
 
 namespace Wd.Common.Test
 {
-   partial class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
-            EncodingTest();  
+            EncodingTest();
         }
     }
 }

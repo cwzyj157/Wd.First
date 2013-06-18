@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Wd.Extensions
+namespace Wd.Extensions.IComparableExtensions
 {
-    public static class IComparableExtension
+    public static class IComparableExtensions
     {
         /// <summary>
         /// 比较两个可以比较对象的大小

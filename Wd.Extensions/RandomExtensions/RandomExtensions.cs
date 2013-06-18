@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Wd.Extensions
+namespace Wd.Extensions.RandomExtensions
 {
-    public static class RandomExtension
+    public static class RandomExtensions
     {
         /// <summary>
         /// 随机填充指定长度的字节数组

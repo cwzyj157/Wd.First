@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Wd.Extensions
 {
-    public static class StringToZhExstension
+    public static class StringToZhExstensions
     {
         #region 全角半角转换
         /// <summary>

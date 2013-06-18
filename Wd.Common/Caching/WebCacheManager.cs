@@ -5,29 +5,20 @@ using System.Text;
 using System.Collections;
 using System.Web;
 
-namespace Wd.Common
+namespace Wd.Common.Caching
 {
     /// <summary>
     /// 此类还得继续修改
     /// </summary>
-    public class CacheManager
+    public class WebCacheManager
     {
         #region 系统缓存建议使用方式
-        // init a thread-safe hashtable that contains object's life cycle
-        private static Hashtable htLightWeightCache = Hashtable.Synchronized(new Hashtable());
         /// <summary>
         /// HttpRuntime.Cache(运行时缓存，适用了一切对象，对象存储在内存中。效率相对LWCache稍差)
         /// </summary>
         public static System.Web.Caching.Cache HttpRuntimeCache
         {
             get { return HttpRuntime.Cache; }
-        }
-        /// <summary>
-        /// 轻量级缓存(使用Hashtable存放key=value形式的小数据量的缓存e.g "IsWriteLog"="T"。效率高)
-        /// </summary>
-        public static Hashtable HashCache
-        {
-            get { return htLightWeightCache; }
         }
         #endregion
 

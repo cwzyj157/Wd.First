@@ -9,7 +9,7 @@ namespace Wd.Extensions
     /// <summary>
     /// 从字符串到HTML相关的扩展
     /// </summary>
-    public static class StringToHtmlExtension
+    public static class StringToHtmlExtensions
     {
         #region 字符串替换
         // 对html内容进行去掉空格处理

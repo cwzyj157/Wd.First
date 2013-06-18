@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections;
+using Wd.Extensions.ObjectExtensions;
 
-namespace Wd.Extensions
+namespace Wd.Extensions.IEnumerableExtensions
 {
-    public static class IEnumerableExtension
+    public static class IEnumerableExtensions
     {
         /// <summary>
         /// 将数组以指定字符拼接
@@ -25,6 +26,16 @@ namespace Wd.Extensions
                             .Append(splitChar);
             }
             return sbResult.ToString();
+        }
+        /// <summary>
+        /// 列表是否为空
+        /// </summary>
+        /// <typeparam name="T">数据类型</typeparam>
+        /// <param name="Value">数据列表</param>
+        /// <returns>[True:数据列表为NULL或空，False:数据列表不为空]</returns>
+        public static bool IsNullOrEmpty<T>(this IEnumerable<T> Value)
+        {
+            return Value.IsNull() || Value.Count() == 0;
         }
     }
 }

@@ -47,7 +47,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Caching\DictCache.cs" />
+    <Compile Include="Caching\CacheItem.cs" />
+    <Compile Include="Caching\HashCache.cs" />
+    <Compile Include="Caching\Interface\ICache.cs" />
+    <Compile Include="Caching\Interface\ICacheItem.cs" />
+    <Compile Include="Caching\WebCacheManager.cs" />
     <Compile Include="CodeTimer.cs" />
     <Compile Include="DiskHelper.cs" />
     <Compile Include="Encoding\WebResponseEncoding.cs" />

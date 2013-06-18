@@ -27,6 +27,7 @@ namespace OtherTestProject.Console
     {
         public static void Reverse(int[] array, int begin, int end)
         {
+
             //if (array == null || array.Length == 0) throw new ArgumentNullException("array", "数组对象不能为空");
             //if (begin < 0 || begin > array.Length) throw new ArgumentOutOfRangeException("begin", "参数begin值应该大于0并且小于end");
             //if (end < begin || end > array.Length) throw new ArgumentOutOfRangeException("end", "参数end值应该大于begin值并且小于数组最大长度");

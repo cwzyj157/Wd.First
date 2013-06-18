@@ -9,7 +9,7 @@ namespace Wd.Extensions
     /// <summary>
     /// 字符串到正则表达扩展
     /// </summary>
-    public static class StringToRegexExtension
+    public static class StringToRegexExtensions
     {
         /// <summary>
         /// 字符串是否匹配模式

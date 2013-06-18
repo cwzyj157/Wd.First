@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Wd.Extensions
+namespace Wd.Extensions.StringExtensions
 {
     /// <summary>
     /// 时间转换
     /// </summary>
-    public static class StringToDateTimeExtension
+    public static class StringToDateTimeExtensions
     {
         public static string[][] TimeZones = new string[][] {
                                                 new string[] {"ACDT", "-1030", "Australian Central Daylight"},
